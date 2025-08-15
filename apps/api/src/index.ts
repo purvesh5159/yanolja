@@ -34,7 +34,6 @@ function resolveDataRoot(): string {
 			// ignore
 		}
 	}
-	// fallback to first candidate even if not existing; routes will handle gracefully
 	return candidates[0] ?? path.resolve(process.cwd(), 'data/Propery_Hub_JSON');
 }
 
@@ -86,14 +85,17 @@ function readJson(filePath: string): any {
 	try {
 		return JSON.parse(text);
 	} catch (e) {
-		// Some OTA files may contain trailing characters; try to sanitize
 		throw new Error(`Failed to parse JSON: ${filePath}: ${(e as Error).message}`);
 	}
 }
 
+const cache = new Map<string, { yanolja?: CanonicalPropertyProfile; a?: CanonicalPropertyProfile; y?: CanonicalPropertyProfile }>();
+
 function buildCanonical(
 	paths: PropertyDatasetPaths
 ): { yanolja?: CanonicalPropertyProfile; a?: CanonicalPropertyProfile; y?: CanonicalPropertyProfile } {
+	const cached = cache.get(paths.id);
+	if (cached) return cached;
 	const yanoljaRaw = paths.yanolja ? readJson(paths.yanolja) : undefined;
 	const yj = yanoljaRaw ? normalizeYanolja(yanoljaRaw) : undefined;
 	const fallbackImages: ImageItem[] | undefined = yj?.images;
@@ -101,7 +103,9 @@ function buildCanonical(
 	const yRaw = paths.otaY ? readJson(paths.otaY) : undefined;
 	const a = aRaw ? normalizeOtaA(aRaw, fallbackImages) : undefined;
 	const y = yRaw ? normalizeOtaY(yRaw, fallbackImages) : undefined;
-	return { yanolja: yj, a, y };
+	const obj = { yanolja: yj, a, y };
+	cache.set(paths.id, obj);
+	return obj;
 }
 
 function computeScores(base: CanonicalPropertyProfile, other: CanonicalPropertyProfile): FieldMatchBreakdown {
@@ -115,6 +119,10 @@ function computeScores(base: CanonicalPropertyProfile, other: CanonicalPropertyP
 	const overall = Math.round((name * 0.35 + address * 0.35 + facilities * 0.2 + images * 0.1));
 	return { name, address, images, facilities, overall };
 }
+
+app.get('/api/health', (_req, res) => {
+	res.json({ ok: true, dataRoot: DATA_ROOT, properties: listPropertyDatasets().length });
+});
 
 app.get('/api/properties', (_req, res) => {
 	const list = listPropertyDatasets().map((p) => ({ id: p.id }));
@@ -155,6 +163,11 @@ app.get('/api/properties/:id', (req, res) => {
 		canonical,
 		comparisons,
 		sourcesAvailability: { Yanolja: Boolean(yanolja), A: Boolean(a), Y: Boolean(y) },
+		normalized: {
+			Yanolja: yanolja,
+			A: a,
+			Y: y,
+		},
 	};
 	res.json(response);
 });
