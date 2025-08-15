@@ -27,7 +27,6 @@ function resolveDataRoot() {
             // ignore
         }
     }
-    // fallback to first candidate even if not existing; routes will handle gracefully
     return candidates[0] ?? path_1.default.resolve(process.cwd(), 'data/Propery_Hub_JSON');
 }
 const DATA_ROOT = resolveDataRoot();
@@ -72,11 +71,14 @@ function readJson(filePath) {
         return JSON.parse(text);
     }
     catch (e) {
-        // Some OTA files may contain trailing characters; try to sanitize
         throw new Error(`Failed to parse JSON: ${filePath}: ${e.message}`);
     }
 }
+const cache = new Map();
 function buildCanonical(paths) {
+    const cached = cache.get(paths.id);
+    if (cached)
+        return cached;
     const yanoljaRaw = paths.yanolja ? readJson(paths.yanolja) : undefined;
     const yj = yanoljaRaw ? (0, dist_1.normalizeYanolja)(yanoljaRaw) : undefined;
     const fallbackImages = yj?.images;
@@ -84,7 +86,9 @@ function buildCanonical(paths) {
     const yRaw = paths.otaY ? readJson(paths.otaY) : undefined;
     const a = aRaw ? (0, dist_1.normalizeOtaA)(aRaw, fallbackImages) : undefined;
     const y = yRaw ? (0, dist_1.normalizeOtaY)(yRaw, fallbackImages) : undefined;
-    return { yanolja: yj, a, y };
+    const obj = { yanolja: yj, a, y };
+    cache.set(paths.id, obj);
+    return obj;
 }
 function computeScores(base, other) {
     const name = (0, dist_1.stringSimilarityPercent)(base.name ?? '', other.name ?? '');
@@ -94,6 +98,9 @@ function computeScores(base, other) {
     const overall = Math.round((name * 0.35 + address * 0.35 + facilities * 0.2 + images * 0.1));
     return { name, address, images, facilities, overall };
 }
+app.get('/api/health', (_req, res) => {
+    res.json({ ok: true, dataRoot: DATA_ROOT, properties: listPropertyDatasets().length });
+});
 app.get('/api/properties', (_req, res) => {
     const list = listPropertyDatasets().map((p) => ({ id: p.id }));
     res.json(list);
@@ -136,6 +143,11 @@ app.get('/api/properties/:id', (req, res) => {
         canonical,
         comparisons,
         sourcesAvailability: { Yanolja: Boolean(yanolja), A: Boolean(a), Y: Boolean(y) },
+        normalized: {
+            Yanolja: yanolja,
+            A: a,
+            Y: y,
+        },
     };
     res.json(response);
 });

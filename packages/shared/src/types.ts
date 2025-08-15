@@ -66,4 +66,5 @@ export interface ConsolidatedResponse {
 	canonical: CanonicalPropertyProfile;
 	comparisons: Partial<Record<'vsA' | 'vsY', ComparisonResult>>;
 	sourcesAvailability: Partial<Record<OtaId, boolean>>;
+	normalized?: Partial<Record<OtaId, CanonicalPropertyProfile>>;
 }
