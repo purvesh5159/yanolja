@@ -45,6 +45,25 @@ function normalizeYanolja(raw) {
     }
     const coord = locationSection.coordinate ?? {};
     const review = data.review ?? {};
+    // Enhanced fields
+    const starRatingText = safeString(atf.hotelStar);
+    let checkInTime;
+    let checkOutTime;
+    let languages = [];
+    let onSiteDining = [];
+    let policies = {};
+    // Try reading structured sections for policy/language/dining keywords
+    const detailsSections = sanitizeArray(data?.detailSection?.body);
+    for (const sec of detailsSections) {
+        const title = (sec && sec.title) || undefined;
+        const contents = sanitizeArray((sec && sec.plainTextComponents) || []).map((p) => p?.text).filter(Boolean);
+        if (title && contents.length) {
+            policies[title] = contents;
+        }
+    }
+    // Languages from facilities
+    languages = facilities.filter((f) => /한국어|영어|일본어|중국어/i.test(f));
+    onSiteDining = facilities.filter((f) => /(레스토랑|카페|Bar|바)/i.test(f));
     return {
         id: String(atf.propertyId ?? ''),
         primaryId: String(atf.propertyId ?? ''),
@@ -65,6 +84,14 @@ function normalizeYanolja(raw) {
         rating: extractFirstNumber(review?.score),
         reviewCount: extractFirstNumber(review?.reviewCount),
         phone: undefined,
+        starRatingText,
+        checkInTime,
+        checkOutTime,
+        propertyType: undefined,
+        parkingAvailable: facilities.some((f) => /주차/i.test(f)),
+        languages,
+        policies,
+        onSiteDining,
     };
 }
 exports.normalizeYanolja = normalizeYanolja;
@@ -89,17 +116,36 @@ function normalizeOtaY(raw, yanoljaFallbackImages) {
     }
     const facilities = [];
     const details = Array.isArray(raw?.props?.pageProps?.details) ? raw.props.pageProps.details : [];
+    let checkInTime;
+    let checkOutTime;
+    let policies = {};
     for (const d of details) {
         if (d?.title && typeof d.title === 'string' && Array.isArray(d.contents)) {
-            if (d.title.includes('기본정보') || d.title.includes('부대시설')) {
-                for (const c of d.contents) {
-                    if (typeof c === 'string') {
-                        c.split(/[•·,、]/).forEach((token) => {
-                            const t = token.trim();
-                            if (t)
-                                facilities.push(t);
-                        });
+            const contents = d.contents.filter((s) => typeof s === 'string');
+            if (d.title.includes('기본정보')) {
+                for (const c of contents) {
+                    const m = /체크인\s*:\s*([^|]+)\|\s*체크아웃\s*:\s*([^|]+)/.exec(c);
+                    if (m) {
+                        checkInTime = m[1].trim();
+                        checkOutTime = m[2].trim();
                     }
+                    c.split(/[•·,、]/).forEach((token) => {
+                        const t = token.trim();
+                        if (t)
+                            facilities.push(t);
+                    });
+                }
+            }
+            else if (d.title.includes('취소') || d.title.includes('확인사항') || d.title.includes('애견') || d.title.includes('인원')) {
+                policies[d.title] = contents;
+            }
+            else if (d.title.includes('부대시설')) {
+                for (const c of contents) {
+                    c.split(/[,、]/).forEach((token) => {
+                        const t = token.trim();
+                        if (t)
+                            facilities.push(t);
+                    });
                 }
             }
         }
@@ -123,6 +169,14 @@ function normalizeOtaY(raw, yanoljaFallbackImages) {
         phone: info?.tel,
         rating: typeof meta?.review?.rate === 'number' ? meta.review.rate : undefined,
         reviewCount: typeof meta?.review?.count === 'number' ? meta.review.count : undefined,
+        starRatingText: meta?.grade,
+        checkInTime,
+        checkOutTime,
+        propertyType: String(meta?.category ?? ''),
+        parkingAvailable: facilities.some((f) => /주차/i.test(f)),
+        languages: facilities.filter((f) => /한국어|영어|일본어|중국어/i.test(f)),
+        policies,
+        onSiteDining: facilities.filter((f) => /(레스토랑|카페|Bar|바)/i.test(f)),
     };
 }
 exports.normalizeOtaY = normalizeOtaY;
@@ -137,7 +191,7 @@ function normalizeOtaA(raw, yanoljaFallbackImages) {
     let description;
     let phone;
     // Attempt common fields
-    name = hotel?.displayName || hotel?.name || raw?.translations?.hotelHeader?.otaAText ? undefined : undefined;
+    name = hotel?.displayName || hotel?.name || undefined;
     address = hotel?.address?.full || hotel?.address || raw?.propertyInfo?.address?.fullAddress;
     if (Array.isArray(hotel?.images)) {
         for (const img of hotel.images) {
@@ -191,6 +245,14 @@ function normalizeOtaA(raw, yanoljaFallbackImages) {
         phone,
         rating: undefined,
         reviewCount: undefined,
+        starRatingText: undefined,
+        checkInTime: undefined,
+        checkOutTime: undefined,
+        propertyType: undefined,
+        parkingAvailable: facilities.some((f) => /parking|주차/i.test(f)),
+        languages: facilities.filter((f) => /korean|english|japanese|chinese|한국어|영어|일본어|중국어/i.test(f)),
+        policies: {},
+        onSiteDining: facilities.filter((f) => /(restaurant|cafe|bar|레스토랑|카페|Bar|바)/i.test(f)),
     };
 }
 exports.normalizeOtaA = normalizeOtaA;

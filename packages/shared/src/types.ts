@@ -24,6 +24,15 @@ export interface CanonicalPropertyProfile {
 	phone?: string;
 	rating?: number;
 	reviewCount?: number;
+	// Enhanced fields
+	starRatingText?: string;
+	checkInTime?: string;
+	checkOutTime?: string;
+	propertyType?: string;
+	parkingAvailable?: boolean;
+	languages: string[];
+	policies: Record<string, string[]>; // e.g. { "취소 및 환불 규정": ["...", ...] }
+	onSiteDining: string[]; // e.g. ["레스토랑", "카페", "Bar"]
 }
 
 export interface FieldMatchBreakdown {

@@ -21,6 +21,14 @@ export interface CanonicalPropertyProfile {
     phone?: string;
     rating?: number;
     reviewCount?: number;
+    starRatingText?: string;
+    checkInTime?: string;
+    checkOutTime?: string;
+    propertyType?: string;
+    parkingAvailable?: boolean;
+    languages: string[];
+    policies: Record<string, string[]>;
+    onSiteDining: string[];
 }
 export interface FieldMatchBreakdown {
     name: number;
