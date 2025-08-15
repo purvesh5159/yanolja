@@ -14,6 +14,10 @@ type Comparison = {
 	scores: FieldMatchBreakdown;
 };
 
+type ImageItem = { url: string; title?: string };
+
+type RoomTypeSummary = { id?: string | number; name?: string; images: ImageItem[] };
+
 type Canonical = {
 	id: string;
 	primaryId: string;
@@ -22,12 +26,26 @@ type Canonical = {
 	address?: string;
 	description?: string;
 	nearbyAttractions: string[];
-	images: { url: string; title?: string }[];
+	images: ImageItem[];
 	facilities: string[];
 	coordinates?: { latitude?: number; longitude?: number };
 	phone?: string;
 	rating?: number;
 	reviewCount?: number;
+	starRatingText?: string;
+	starRating?: number;
+	checkInTime?: string;
+	checkOutTime?: string;
+	propertyType?: string;
+	parkingAvailable?: boolean;
+	languages: string[];
+	policies: Record<string, string[]>;
+	onSiteDining: string[];
+	roomTypes: RoomTypeSummary[];
+	breakfastAvailable?: boolean;
+	breakfastDetails: string[];
+	petPolicy: string[];
+	nearbyTransport: string[];
 };
 
 type ConsolidatedResponse = {
@@ -151,6 +169,36 @@ export function App() {
 								<div>
 									<div style={{ fontSize: 24, fontWeight: 800 }}>{data.canonical.name || '이름 없음'}</div>
 									<div style={{ color: '#666', marginBottom: 8 }}>{data.canonical.address}</div>
+									<div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 8 }}>
+										{(data.canonical.starRatingText || data.canonical.starRating) && (
+											<span style={{ border: '1px solid #ddd', padding: '4px 8px', borderRadius: 999, background: '#fafafa' }}>
+												Star: {data.canonical.starRatingText}{data.canonical.starRating ? ` (${data.canonical.starRating})` : ''}
+											</span>
+										)}
+										{data.canonical.checkInTime && (
+											<span style={{ border: '1px solid #ddd', padding: '4px 8px', borderRadius: 999, background: '#fafafa' }}>Check-in: {data.canonical.checkInTime}</span>
+										)}
+										{data.canonical.checkOutTime && (
+											<span style={{ border: '1px solid #ddd', padding: '4px 8px', borderRadius: 999, background: '#fafafa' }}>Check-out: {data.canonical.checkOutTime}</span>
+										)}
+										{data.canonical.propertyType && (
+											<span style={{ border: '1px solid #ddd', padding: '4px 8px', borderRadius: 999, background: '#fafafa' }}>Type: {data.canonical.propertyType}</span>
+										)}
+										{typeof data.canonical.parkingAvailable === 'boolean' && (
+											<span style={{ border: '1px solid #ddd', padding: '4px 8px', borderRadius: 999, background: '#fafafa' }}>Parking: {data.canonical.parkingAvailable ? 'Yes' : 'No'}</span>
+										)}
+										{data.canonical.phone && (
+											<span style={{ border: '1px solid #ddd', padding: '4px 8px', borderRadius: 999, background: '#fafafa' }}>Phone: {data.canonical.phone}</span>
+										)}
+									</div>
+									<div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 12 }}>
+										{(data.canonical.languages || []).map((lang, i) => (
+											<span key={i} style={{ border: '1px solid #ddd', padding: '4px 8px', borderRadius: 999, background: '#f6f6ff' }}>{lang}</span>
+										))}
+										{(data.canonical.onSiteDining || []).map((dine, i) => (
+											<span key={`d-${i}`} style={{ border: '1px solid #ddd', padding: '4px 8px', borderRadius: 999, background: '#f6fff6' }}>{dine}</span>
+										))}
+									</div>
 									<div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, margin: '8px 0 16px' }}>
 										{data.canonical.images.slice(0, 6).map((img, idx) => (
 											<img key={idx} src={img.url} alt={img.title} style={{ width: 120, height: 90, objectFit: 'cover', borderRadius: 6, border: '1px solid #eee' }} />
@@ -165,6 +213,16 @@ export function App() {
 											))}
 										</ul>
 									</div>
+									{(data.canonical.nearbyTransport && data.canonical.nearbyTransport.length > 0) && (
+										<div style={{ marginTop: 12 }}>
+											<div style={{ fontWeight: 700, marginBottom: 6 }}>Transport</div>
+											<ul>
+												{data.canonical.nearbyTransport.map((n, i) => (
+													<li key={i}>{n}</li>
+												))}
+											</ul>
+										</div>
+									)}
 									<div style={{ marginTop: 16 }}>
 										<div style={{ fontWeight: 700, marginBottom: 6 }}>Facilities</div>
 										<div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
@@ -173,6 +231,59 @@ export function App() {
 											))}
 										</div>
 									</div>
+									{(data.canonical.breakfastAvailable || (data.canonical.breakfastDetails && data.canonical.breakfastDetails.length > 0)) && (
+										<div style={{ marginTop: 16 }}>
+											<div style={{ fontWeight: 700, marginBottom: 6 }}>Breakfast</div>
+											<div style={{ marginBottom: 6 }}>{data.canonical.breakfastAvailable ? 'Available' : '—'}</div>
+											<ul>
+												{(data.canonical.breakfastDetails || []).map((b, i) => (
+													<li key={i}>{b}</li>
+												))}
+											</ul>
+										</div>
+									)}
+									{(data.canonical.petPolicy && data.canonical.petPolicy.length > 0) && (
+										<div style={{ marginTop: 16 }}>
+											<div style={{ fontWeight: 700, marginBottom: 6 }}>Pet Policy</div>
+											<ul>
+												{data.canonical.petPolicy.map((p, i) => (
+													<li key={i}>{p}</li>
+												))}
+											</ul>
+										</div>
+									)}
+									{(data.canonical.roomTypes && data.canonical.roomTypes.length > 0) && (
+										<div style={{ marginTop: 16 }}>
+											<div style={{ fontWeight: 700, marginBottom: 6 }}>Room Types</div>
+											<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))', gap: 10 }}>
+												{data.canonical.roomTypes.map((rt, idx) => (
+													<div key={idx} style={{ border: '1px solid #eee', borderRadius: 8, padding: 8 }}>
+														<div style={{ fontWeight: 600, marginBottom: 6 }}>{rt.name || `Room ${idx + 1}`}</div>
+														<div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+															{(rt.images || []).slice(0, 3).map((img, i2) => (
+																<img key={i2} src={img.url} alt={img.title} style={{ width: 64, height: 64, objectFit: 'cover', borderRadius: 6, border: '1px solid #eee' }} />
+															))}
+														</div>
+													</div>
+												))}
+											</div>
+										</div>
+									)}
+									{data.canonical.policies && Object.keys(data.canonical.policies).length > 0 && (
+										<div style={{ marginTop: 16 }}>
+											<div style={{ fontWeight: 700, marginBottom: 6 }}>Policies</div>
+											{Object.entries(data.canonical.policies).slice(0, 3).map(([k, vals], i) => (
+												<div key={i} style={{ marginBottom: 8 }}>
+													<div style={{ fontWeight: 600 }}>{k}</div>
+													<ul>
+														{(vals || []).slice(0, 5).map((v, j) => (
+															<li key={j}>{v}</li>
+														))}
+													</ul>
+												</div>
+											))}
+										</div>
+									)}
 								</div>
 								<div>
 									<div style={{ fontWeight: 700, marginBottom: 8 }}>Match Scores vs Yanolja</div>
