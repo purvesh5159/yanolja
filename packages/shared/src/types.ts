@@ -10,6 +10,12 @@ export interface ImageItem {
 	title?: string;
 }
 
+export interface RoomTypeSummary {
+	id?: string | number;
+	name?: string;
+	images: ImageItem[];
+}
+
 export interface CanonicalPropertyProfile {
 	id: string;
 	primaryId: string; // same as id for now
@@ -26,6 +32,7 @@ export interface CanonicalPropertyProfile {
 	reviewCount?: number;
 	// Enhanced fields
 	starRatingText?: string;
+	starRating?: number;
 	checkInTime?: string;
 	checkOutTime?: string;
 	propertyType?: string;
@@ -33,6 +40,11 @@ export interface CanonicalPropertyProfile {
 	languages: string[];
 	policies: Record<string, string[]>; // e.g. { "취소 및 환불 규정": ["...", ...] }
 	onSiteDining: string[]; // e.g. ["레스토랑", "카페", "Bar"]
+	roomTypes: RoomTypeSummary[];
+	breakfastAvailable?: boolean;
+	breakfastDetails: string[];
+	petPolicy: string[];
+	nearbyTransport: string[];
 }
 
 export interface FieldMatchBreakdown {

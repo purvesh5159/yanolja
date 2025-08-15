@@ -1,4 +1,4 @@
-import { CanonicalPropertyProfile, ImageItem } from './types';
+import { CanonicalPropertyProfile, ImageItem, RoomTypeSummary } from './types';
 
 function sanitizeArray(value: any): any[] {
 	return Array.isArray(value) ? value : [];
@@ -25,7 +25,6 @@ export function normalizeYanolja(raw: any): CanonicalPropertyProfile {
 	const facilitySection = data.facilitySection ?? {};
 
 	const images: ImageItem[] = [];
-	// Best-effort: use photo and any gallery images if present
 	if (typeof atf.photo === 'string') {
 		images.push({ url: atf.photo, title: '대표 이미지' });
 	}
@@ -50,13 +49,18 @@ export function normalizeYanolja(raw: any): CanonicalPropertyProfile {
 
 	// Enhanced fields
 	const starRatingText = safeString(atf.hotelStar);
+	const starRating = starRatingText ? extractFirstNumber(starRatingText.replace(/[^0-9]/g, '')) : undefined;
 	let checkInTime: string | undefined;
 	let checkOutTime: string | undefined;
 	let languages: string[] = [];
 	let onSiteDining: string[] = [];
 	let policies: Record<string, string[]> = {};
+	let roomTypes: RoomTypeSummary[] = [];
+	let breakfastAvailable: boolean | undefined;
+	let breakfastDetails: string[] = [];
+	let petPolicy: string[] = [];
+	let nearbyTransport: string[] = [];
 
-	// Try reading structured sections for policy/language/dining keywords
 	const detailsSections = sanitizeArray(data?.detailSection?.body);
 	for (const sec of detailsSections) {
 		const title = (sec && (sec as any).title) || undefined;
@@ -65,9 +69,21 @@ export function normalizeYanolja(raw: any): CanonicalPropertyProfile {
 			policies[title] = contents as string[];
 		}
 	}
-	// Languages from facilities
 	languages = facilities.filter((f) => /한국어|영어|일본어|중국어/i.test(f));
 	onSiteDining = facilities.filter((f) => /(레스토랑|카페|Bar|바)/i.test(f));
+	breakfastAvailable = facilities.some((f) => /조식/i.test(f));
+
+	// Yanolja may have room types in sections; try simple heuristic
+	const roomTypeSection = sanitizeArray(data?.roomSection?.rooms);
+	for (const r of roomTypeSection) {
+		roomTypes.push({ id: r?.id, name: r?.name, images: sanitizeArray(r?.images).map((i: any) => ({ url: i?.url || i?.image, title: i?.title })) });
+	}
+
+	// Nearby transport from location body
+	nearbyTransport = sanitizeArray(locationSection?.body)
+		.map((b: any) => sanitizeArray(b?.plainTextComponents).map((p: any) => p?.text))
+		.flat()
+		.filter((t: any) => typeof t === 'string' && /역|교통|셔틀|분|km|m/.test(t));
 
 	return {
 		id: String(atf.propertyId ?? ''),
@@ -90,6 +106,7 @@ export function normalizeYanolja(raw: any): CanonicalPropertyProfile {
 		reviewCount: extractFirstNumber(review?.reviewCount),
 		phone: undefined,
 		starRatingText,
+		starRating,
 		checkInTime,
 		checkOutTime,
 		propertyType: undefined,
@@ -97,6 +114,11 @@ export function normalizeYanolja(raw: any): CanonicalPropertyProfile {
 		languages,
 		policies,
 		onSiteDining,
+		roomTypes,
+		breakfastAvailable,
+		breakfastDetails,
+		petPolicy,
+		nearbyTransport,
 	};
 }
 
@@ -123,6 +145,8 @@ export function normalizeOtaY(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 	let checkInTime: string | undefined;
 	let checkOutTime: string | undefined;
 	let policies: Record<string, string[]> = {};
+	let breakfastDetails: string[] = [];
+	let petPolicy: string[] = [];
 	for (const d of details) {
 		if (d?.title && typeof d.title === 'string' && Array.isArray(d.contents)) {
 			const contents = d.contents.filter((s: any) => typeof s === 'string');
@@ -140,6 +164,9 @@ export function normalizeOtaY(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 				}
 			} else if (d.title.includes('취소') || d.title.includes('확인사항') || d.title.includes('애견') || d.title.includes('인원')) {
 				policies[d.title] = contents as string[];
+				if (d.title.includes('애견')) petPolicy = contents as string[];
+			} else if (d.title.includes('조식')) {
+				breakfastDetails = contents as string[];
 			} else if (d.title.includes('부대시설')) {
 				for (const c of contents) {
 					c.split(/[,、]/).forEach((token: string) => {
@@ -149,6 +176,14 @@ export function normalizeOtaY(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 				}
 			}
 		}
+	}
+
+	// Room types
+	const roomTypes: RoomTypeSummary[] = [];
+	const rooms = Array.isArray(raw?.props?.pageProps?.rooms) ? raw.props.pageProps.rooms : [];
+	for (const r of rooms) {
+		const imgs = sanitizeArray(r?.images).concat(sanitizeArray(r?.newImages)).map((i: any) => ({ url: i?.image || i?.url, title: undefined })).filter((x: any) => x.url);
+		roomTypes.push({ id: r?.id, name: r?.name, images: imgs });
 	}
 
 	return {
@@ -171,6 +206,7 @@ export function normalizeOtaY(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 		rating: typeof meta?.review?.rate === 'number' ? meta.review.rate : undefined,
 		reviewCount: typeof meta?.review?.count === 'number' ? meta.review.count : undefined,
 		starRatingText: meta?.grade,
+		starRating: undefined,
 		checkInTime,
 		checkOutTime,
 		propertyType: String(meta?.category ?? ''),
@@ -178,6 +214,11 @@ export function normalizeOtaY(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 		languages: facilities.filter((f) => /한국어|영어|일본어|중국어/i.test(f)),
 		policies,
 		onSiteDining: facilities.filter((f) => /(레스토랑|카페|Bar|바)/i.test(f)),
+		roomTypes,
+		breakfastAvailable: breakfastDetails.length > 0,
+		breakfastDetails,
+		petPolicy,
+		nearbyTransport: Array.isArray(raw?.props?.pageProps?.traffic?.contents) ? raw.props.pageProps.traffic.contents : [],
 	};
 }
 
@@ -192,7 +233,6 @@ export function normalizeOtaA(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 	let description: string | undefined;
 	let phone: string | undefined;
 
-	// Attempt common fields
 	name = hotel?.displayName || hotel?.name || undefined;
 	address = hotel?.address?.full || hotel?.address || raw?.propertyInfo?.address?.fullAddress;
 	if (Array.isArray(hotel?.images)) {
@@ -214,7 +254,6 @@ export function normalizeOtaA(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 	description = hotel?.summary || hotel?.description || raw?.hotelDescription;
 	phone = hotel?.contact?.phone || hotel?.phone;
 
-	// Facilities: collect from multiple possible arrays
 	const facilities: string[] = [];
 	const amenityArrays: any[] = [];
 	if (Array.isArray(hotel?.facilities)) amenityArrays.push(hotel.facilities);
@@ -227,6 +266,9 @@ export function normalizeOtaA(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 			else if (a?.title) facilities.push(String(a.title));
 		}
 	}
+
+	// Room types not standardized in otaA dump; leave empty or infer if present
+	const roomTypes: RoomTypeSummary[] = [];
 
 	return {
 		id: String(hotel?.id ?? hotel?.hotelId ?? ''),
@@ -243,6 +285,7 @@ export function normalizeOtaA(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 		rating: undefined,
 		reviewCount: undefined,
 		starRatingText: undefined,
+		starRating: undefined,
 		checkInTime: undefined,
 		checkOutTime: undefined,
 		propertyType: undefined,
@@ -250,5 +293,10 @@ export function normalizeOtaA(raw: any, yanoljaFallbackImages?: ImageItem[]): Ca
 		languages: facilities.filter((f) => /korean|english|japanese|chinese|한국어|영어|일본어|중국어/i.test(f)),
 		policies: {},
 		onSiteDining: facilities.filter((f) => /(restaurant|cafe|bar|레스토랑|카페|Bar|바)/i.test(f)),
+		roomTypes,
+		breakfastAvailable: undefined,
+		breakfastDetails: [],
+		petPolicy: [],
+		nearbyTransport: [],
 	};
 }
