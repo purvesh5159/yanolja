@@ -7,6 +7,11 @@ export interface ImageItem {
     url: string;
     title?: string;
 }
+export interface RoomTypeSummary {
+    id?: string | number;
+    name?: string;
+    images: ImageItem[];
+}
 export interface CanonicalPropertyProfile {
     id: string;
     primaryId: string;
@@ -21,6 +26,20 @@ export interface CanonicalPropertyProfile {
     phone?: string;
     rating?: number;
     reviewCount?: number;
+    starRatingText?: string;
+    starRating?: number;
+    checkInTime?: string;
+    checkOutTime?: string;
+    propertyType?: string;
+    parkingAvailable?: boolean;
+    languages: string[];
+    policies: Record<string, string[]>;
+    onSiteDining: string[];
+    roomTypes: RoomTypeSummary[];
+    breakfastAvailable?: boolean;
+    breakfastDetails: string[];
+    petPolicy: string[];
+    nearbyTransport: string[];
 }
 export interface FieldMatchBreakdown {
     name: number;
