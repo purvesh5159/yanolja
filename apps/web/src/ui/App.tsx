@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { ResponsiveContainer, PieChart, Pie, Cell, RadarChart, PolarGrid, PolarAngleAxis, Radar, Legend } from 'recharts';
 
 type FieldMatchBreakdown = {
 	name: number;
@@ -134,6 +135,54 @@ export function App() {
 		const sY = data?.comparisons?.vsY?.scores;
 		return { sA, sY };
 	}, [data]);
+
+	const radarData = useMemo(() => {
+		if (!scores.sA && !scores.sY) return [] as any[];
+		const rows = [
+			{ metric: 'Name', A: scores.sA?.name ?? 0, Y: scores.sY?.name ?? 0 },
+			{ metric: 'Address', A: scores.sA?.address ?? 0, Y: scores.sY?.address ?? 0 },
+			{ metric: 'Images', A: scores.sA?.images ?? 0, Y: scores.sY?.images ?? 0 },
+			{ metric: 'Facilities', A: scores.sA?.facilities ?? 0, Y: scores.sY?.facilities ?? 0 },
+		];
+		return rows;
+	}, [scores]);
+
+	const donutColors = { A: '#1f77b4', Y: '#ff7f0e', track: '#e9ecef' } as const;
+
+	function ConfidenceBadge({ label, value }: { label: string; value?: number }) {
+		const v = typeof value === 'number' ? value : -1;
+		const grade = v >= 80 ? 'High' : v >= 60 ? 'Medium' : v >= 0 ? 'Low' : '—';
+		const bg = v < 0 ? '#f5f5f5' : v >= 80 ? '#d1fae5' : v >= 60 ? '#fef3c7' : '#fee2e2';
+		const color = v < 0 ? '#666' : v >= 80 ? '#065f46' : v >= 60 ? '#92400e' : '#991b1b';
+		return (
+			<span style={{ background: bg, color, border: '1px solid #eee', padding: '4px 8px', borderRadius: 999, fontSize: 12 }}>
+				{label}: {grade}
+			</span>
+		);
+	}
+
+	function Donut({ value, color, label }: { value?: number; color: string; label: string }) {
+		const v = Math.max(0, Math.min(100, value ?? 0));
+		const data = [
+			{ name: 'match', value: v },
+			{ name: 'rest', value: 100 - v },
+		];
+		return (
+			<div style={{ width: 170, height: 170 }}>
+				<ResponsiveContainer>
+					<PieChart>
+						<Pie data={data} innerRadius={55} outerRadius={80} paddingAngle={1} dataKey="value" startAngle={90} endAngle={-270}>
+							{data.map((entry, index) => (
+								<Cell key={`cell-${index}`} fill={index === 0 ? color : donutColors.track} />
+							))}
+						</Pie>
+					</PieChart>
+				</ResponsiveContainer>
+				<div style={{ position: 'relative', top: '-115px', textAlign: 'center', fontWeight: 700 }}>{value ?? '-'}%</div>
+				<div style={{ position: 'relative', top: '-110px', textAlign: 'center', fontSize: 12, color: '#666' }}>{label}</div>
+			</div>
+		);
+	}
 
 	return (
 		<div style={{ display: 'grid', gridTemplateColumns: '260px 1fr', height: '100vh', fontFamily: 'Inter, system-ui, Arial' }}>
@@ -286,11 +335,29 @@ export function App() {
 									)}
 								</div>
 								<div>
-									<div style={{ fontWeight: 700, marginBottom: 8 }}>Match Scores vs Yanolja</div>
-									<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+									<div style={{ fontWeight: 700, marginBottom: 8, display: 'flex', alignItems: 'center', gap: 8 }}>
+										Match Scores vs Yanolja
+										<ConfidenceBadge label="otaA" value={scores.sA?.overall} />
+										<ConfidenceBadge label="otaY" value={scores.sY?.overall} />
+									</div>
+									<div style={{ display: 'flex', gap: 20, flexWrap: 'wrap', marginBottom: 10 }}>
+										<Donut value={scores.sA?.overall} color={donutColors.A} label="otaA Overall" />
+										<Donut value={scores.sY?.overall} color={donutColors.Y} label="otaY Overall" />
+									</div>
+									<div style={{ height: 260, border: '1px solid #eee', borderRadius: 8, padding: 6 }}>
+										<ResponsiveContainer>
+											<RadarChart data={radarData} outerRadius={90}>
+												<PolarGrid />
+												<PolarAngleAxis dataKey="metric" />
+												<Radar name="otaA" dataKey="A" stroke={donutColors.A} fill={donutColors.A} fillOpacity={0.25} />
+												<Radar name="otaY" dataKey="Y" stroke={donutColors.Y} fill={donutColors.Y} fillOpacity={0.25} />
+												<Legend />
+											</RadarChart>
+										</ResponsiveContainer>
+									</div>
+									<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
 										<div>
 											<div style={{ fontWeight: 600, marginBottom: 6 }}>otaA</div>
-											<ScoreCard title="Overall" value={scores.sA?.overall} />
 											<ScoreCard title="Name" value={scores.sA?.name} />
 											<ScoreCard title="Address" value={scores.sA?.address} />
 											<ScoreCard title="Images" value={scores.sA?.images} />
@@ -298,7 +365,6 @@ export function App() {
 										</div>
 										<div>
 											<div style={{ fontWeight: 600, marginBottom: 6 }}>otaY</div>
-											<ScoreCard title="Overall" value={scores.sY?.overall} />
 											<ScoreCard title="Name" value={scores.sY?.name} />
 											<ScoreCard title="Address" value={scores.sY?.address} />
 											<ScoreCard title="Images" value={scores.sY?.images} />
