@@ -66,15 +66,45 @@ export function App() {
 	const [tab, setTab] = useState<'consolidated' | 'raw'>('consolidated');
 
 	useEffect(() => {
-		fetch(`${apiBase}/properties`).then((r) => r.json()).then((list) => setIds(list.map((x: any) => x.id)));
+		fetch(`${apiBase}/properties`)
+			.then(async (r) => {
+				if (!r.ok) throw new Error(`Failed to load properties: ${r.status}`);
+				let data: any = null;
+				try {
+					data = await r.json();
+				} catch (_) {
+					data = null;
+				}
+				const arr = Array.isArray(data) ? data : (data && (data.data || data.items)) || [];
+				const mapped = Array.isArray(arr)
+					? arr.map((x: any) => (typeof x === 'string' ? x : x?.id)).filter(Boolean)
+					: [];
+				setIds(mapped as string[]);
+			})
+			.catch((err) => {
+				console.error(err);
+				setIds([]);
+			});
 	}, []);
 
 	useEffect(() => {
 		if (!selectedId) return;
 		setData(null);
 		setRaw(null);
-		fetch(`${apiBase}/properties/${selectedId}`).then((r) => r.json()).then(setData);
-		fetch(`${apiBase}/properties/${selectedId}/raw`).then((r) => r.json()).then(setRaw);
+		fetch(`${apiBase}/properties/${selectedId}`)
+			.then((r) => (r.ok ? r.json() : Promise.reject(new Error(`Failed to load property ${selectedId}`))))
+			.then(setData)
+			.catch((e) => {
+				console.error(e);
+				setData(null);
+			});
+		fetch(`${apiBase}/properties/${selectedId}/raw`)
+			.then((r) => (r.ok ? r.json() : Promise.reject(new Error(`Failed to load raw ${selectedId}`))))
+			.then(setRaw)
+			.catch((e) => {
+				console.error(e);
+				setRaw(null);
+			});
 	}, [selectedId]);
 
 	useEffect(() => {
