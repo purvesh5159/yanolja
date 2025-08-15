@@ -1,0 +1,3263 @@
+{
+  "props": {
+    "pageProps": {
+      "accommodationId": 6849,
+      "queryParams": {
+        "checkIn": "2025-08-16",
+        "checkOut": "2025-08-17",
+        "personal": 2
+      },
+      "accommodationInfo": {
+        "meta": {
+          "id": 6849,
+          "name": "호텔 인터불고 원주",
+          "grade": "4성급",
+          "gradeCode": "STAR4",
+          "thumbnail": null,
+          "review": {
+            "rate": 8.8,
+            "count": 207
+          },
+          "badges": [],
+          "category": 2,
+          "images": [
+            {
+              "title": "외관",
+              "image": "http://image.otaY.kr/affiliate/2025/05/15/68257319ac0cf.png"
+            },
+            {
+              "title": "전경",
+              "image": "http://image.otaY.kr/affiliate/2025/05/15/6825733f40e56.png"
+            },
+            {
+              "title": "스탠다드 더블룸",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9a84c2be.jpg"
+            },
+            {
+              "title": "스탠다드 더블룸",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9adeece7.jpg"
+            },
+            {
+              "title": "스탠다드 트윈룸",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9beb36de.jpg"
+            },
+            {
+              "title": "스탠다드 패밀리 트윈룸",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9d01ce70.jpg"
+            },
+            {
+              "title": "디럭스 더블룸",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9e6caf85.jpg"
+            },
+            {
+              "title": "디럭스 트윈룸",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9f6a9e6b.jpg"
+            },
+            {
+              "title": "디럭스 패밀리 트윈룸",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa0914295.jpg"
+            },
+            {
+              "title": "IB스위트",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1b8a5a4.jpg"
+            },
+            {
+              "title": "IB스위트",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1bed3ef.jpg"
+            },
+            {
+              "title": "로열스위트",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa467de0e.jpg"
+            },
+            {
+              "title": "로열스위트",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa6064461.jpg"
+            },
+            {
+              "title": "로열스위트",
+              "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa6287f3b.jpg"
+            },
+            {
+              "title": "키즈룸A",
+              "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec39fdc27e.jpg"
+            },
+            {
+              "title": "파티룸B",
+              "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec3a44f417.jpg"
+            },
+            {
+              "title": "펫룸",
+              "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec3a9b984e.jpg"
+            },
+            {
+              "title": "피트니스 센터",
+              "image": "http://image.otaY.kr/affiliate/2025/05/15/682571b7bd5eb.png"
+            },
+            {
+              "title": "수영장",
+              "image": "http://image.otaY.kr/affiliate/2025/05/15/682571bcd5cbd.png"
+            },
+            {
+              "title": "골프장",
+              "image": "http://image.otaY.kr/affiliate/2025/05/15/682571c38024d.png"
+            }
+          ],
+          "newImages": [
+            {
+              "title": "외관",
+              "image": "https://image.withstatic.com/153/467/149/e83122ded4614083893db2ec6cfef5e2.png"
+            },
+            {
+              "title": "전경",
+              "image": "https://image.withstatic.com/191/2/166/fbe7dc37c3df47668a0a49f3c376faf0.png"
+            },
+            {
+              "title": "스탠다드 더블룸",
+              "image": "https://image.withstatic.com/222/453/246/9f701d822e6e4a61bfd72eb6e5afd027.jpg"
+            },
+            {
+              "title": "스탠다드 더블룸",
+              "image": "https://image.withstatic.com/456/353/77/9dcce4bde8144315a6a16a8f77891f4c.jpg"
+            },
+            {
+              "title": "스탠다드 트윈룸",
+              "image": "https://image.withstatic.com/281/152/53/e30558a950bc43789bf0fe15d37ab6ce.jpg"
+            },
+            {
+              "title": "스탠다드 패밀리 트윈룸",
+              "image": "https://image.withstatic.com/6/469/415/f1356baf918841cea2d2d09823a31da8.jpg"
+            },
+            {
+              "title": "디럭스 더블룸",
+              "image": "https://image.withstatic.com/334/268/15/d50738e2fccf406480d85b7c90132744.jpg"
+            },
+            {
+              "title": "디럭스 트윈룸",
+              "image": "https://image.withstatic.com/116/301/153/7991289de6e34a958c0a0245261a657d.jpg"
+            },
+            {
+              "title": "디럭스 패밀리 트윈룸",
+              "image": "https://image.withstatic.com/409/165/186/5e4de3ca9c2745d18918f62b27df232e.jpg"
+            },
+            {
+              "title": "IB스위트",
+              "image": "https://image.withstatic.com/92/84/442/e160bab4902b49d4a6fcbd6f9cb6235b.jpg"
+            },
+            {
+              "title": "IB스위트",
+              "image": "https://image.withstatic.com/193/354/212/fa1590013e1f48c684eee6e3b0a48d30.jpg"
+            },
+            {
+              "title": "로열스위트",
+              "image": "https://image.withstatic.com/139/456/161/d0c7c5d713574dc4b2fea6fb3d5e67bb.jpg"
+            },
+            {
+              "title": "로열스위트",
+              "image": "https://image.withstatic.com/153/6/242/e0e3524a539b48eb86815ba9c702b139.jpg"
+            },
+            {
+              "title": "로열스위트",
+              "image": "https://image.withstatic.com/453/266/296/9bdc37e995054c4f90baf9fcd098b658.jpg"
+            },
+            {
+              "title": "키즈룸A",
+              "image": "https://image.withstatic.com/327/113/320/b885f3239b08482e9b223c750884a7c7.jpg"
+            },
+            {
+              "title": "파티룸B",
+              "image": "https://image.withstatic.com/409/262/341/0214c72e6a5347d28fe97ae4fa8ee212.jpg"
+            },
+            {
+              "title": "펫룸",
+              "image": "https://image.withstatic.com/146/301/112/8ee8f4520fe448cebd53c13c8a00cfcc.jpg"
+            },
+            {
+              "title": "피트니스 센터",
+              "image": "https://image.withstatic.com/88/148/429/8e414018ffbd4ac0918c95cda15ef52f.png"
+            },
+            {
+              "title": "수영장",
+              "image": "https://image.withstatic.com/301/364/441/de633b2e17f645b8af90f6de7b91d48c.png"
+            },
+            {
+              "title": "골프장",
+              "image": "https://image.withstatic.com/53/14/202/f54ac7a54c4b4642829711e6caef8449.png"
+            }
+          ],
+          "address": "강원 원주시 반곡동 1809-1",
+          "tel": "033-769-8114",
+          "location": {
+            "thumbnail": "http://image.otaY.kr/static_maps_by_naver/6849_37.33244183181508_127.9742530301693_640x320_2_14_ko.png",
+            "latitude": 37.33244183181508,
+            "longitude": 127.9742530301693
+          },
+          "additional": [],
+          "specialDay": null,
+          "keywords": [],
+          "black": false,
+          "btype": false
+        },
+        "paymentBenefits": {
+          "title": "결제 혜택",
+          "benefits": [
+            {
+              "id": "TOSS",
+              "name": "토스페이",
+              "icon": "https://image.otaY.kr/images/png/pdp/payment/img_payment_tosspay.png",
+              "contents": [
+                "3만원 이상, 10% <b>최대 1만원 할인</b>(오전10시, 일 1,000명)",
+                "2만원 이상, <b>2천원 할인 </b>(오후 4시, 일 2,000명)",
+                "토스페이로 10만원 이상 첫결제 시, 3천원 할인(오전 10시,일 250명)"
+              ]
+            },
+            {
+              "id": "KAKAO",
+              "name": "카카오페이",
+              "icon": "https://image.otaY.kr/images/png/pdp/payment/img_payment_kakao.png",
+              "contents": [
+                "페이머니로 결제시, <b>최대 1만원 할인</b>",
+                "호텔/펜션 - 7만원 이상, <b>10% 할인</b> (오전0시, 일 750명)",
+                "모텔 - 2만원 이상 ,&nbsp; <b>2천원 할인</b> (오전0시, 일 1,600명)"
+              ]
+            },
+            {
+              "id": "QUICK_TRANSFER",
+              "name": "퀵계좌이체",
+              "icon": null,
+              "contents": [
+                "퀵계좌이체 결제 시, <b>누구나 0.5% 할인</b>",
+                "생애첫결제 시, 7만원 이상, <b>5천원 할인</b> (매일 9시)"
+              ]
+            },
+            {
+              "id": "CARD",
+              "name": "신용/체크카드",
+              "icon": null,
+              "contents": [
+                "<span style=\"white-space-collapse: collapse;\">국내숙소 - 7만원 이상, </span><b style=\"white-space-collapse: collapse;\">5천원 할인&nbsp;</b>",
+                "오전 0시 우리카드 (일 65명)"
+              ]
+            },
+            {
+              "id": "CARD",
+              "name": "신용/체크카드",
+              "icon": null,
+              "contents": [
+                "<span style=\"color: rgba(0, 0, 0, 0.87); font-size: 12px; text-align: center; white-space-collapse: collapse;\">국내숙소 - 현대카드 M포인트 10% 사용 (</span><span style=\"font-weight: bolder; white-space-collapse: collapse; color: rgba(0, 0, 0, 0.87); font-size: 12px; text-align: center;\">최대 5,000P)</span>"
+              ]
+            }
+          ],
+          "count": 5
+        },
+        "manager": {
+          "comment": "스페인어로 '모두의 마음과 뜻을 함께하는 화목한 마을' 이란 뜻을 담고 있는 인터불고는 자연마저 쉬어가는 원주 유일의 4성급 호텔 입니다\n객실 뿐 아니라 골프장, 레스토랑, 웨딩홀, 연회장 등을 갖추고 있어 품격 높은 서비스를 제공합니다"
+        },
+        "benefit": null,
+        "details": [
+          {
+            "title": "공지사항",
+            "contents": [
+              "<b>[일회용품 제공 제한 안내]</b>",
+              "환경부의 숙박업소 일회용품 사용에 관한 규제에 따라 일회용품 제공이 제한됩니다",
+              "다회용 비치 용품 : 샴푸, 컨디셔너, 바디워시, 핸드워시, 바디로션",
+              "<b>[펫 놀이터 운영 중단 안내]</b>",
+              "기간: 2025년 4월 16일~추후 공지 예정",
+              "내부 공사로 인해 펫 놀이터 사용이 불가합니다",
+              "고객님의 만족도를 높이기 위하여 다시 새로운 모습으로 찾아 뵙겠습니다",
+              "고객 여러분의 많은 양해 부탁드립니다"
+            ]
+          },
+          {
+            "title": "기본정보",
+            "contents": [
+              "체크인 : 15:00 | 체크아웃 : 11:00",
+              "무료 Wi-Fi",
+              "전 객실 금연",
+              "Bath Amenity (치약, 칫솔 유료)",
+              "주차 무료 (객실당 1대)"
+            ]
+          },
+          {
+            "title": "인원 추가 정보",
+            "contents": [
+              "전 객실 인원 추가 불가 / 단, 키즈룸A, 키즈룸B 객실: 최대 투숙 가능 인원: 성인 2인+초등학생 이하 아동 2인 (성인 3명 이상 입실 불가)",
+              "엑스트라베드 및 침구 추가 불가",
+              "영유아 인원수 포함 / 최대인원 초과 불가",
+              "상세 이용 호텔 프론트 문의"
+            ]
+          },
+          {
+            "title": "투숙객 혜택",
+            "contents": [
+              "짐 보관 가능"
+            ]
+          },
+          {
+            "title": "부대시설 정보",
+            "contents": [
+              "레스토랑, 카페, Bar, 피트니스 센터, 사우나, 골프장, 연회장, 여행사, 플라워샵",
+              "수영장 / 신장 120cm 이하, 실내수영복 및 수영모 미착용 시 입장 제한"
+            ]
+          },
+          {
+            "title": "애견 입실안내",
+            "contents": [
+              "<b>펫룸, 펫 스위트 객실만 반려견 입실이 가능하며, 호텔로 사전 문의는 필수입니다</b>",
+              "객실당 반려동물 1마리 동반 입실이 가능합니다",
+              "반려견의 체중은 10kg 이하여야 합니다 (단, 시각장애인 안내견의 경우는 제한이 없습니다)",
+              "동물보호법에서 정의하고 있는 맹견에 해당하는 견종은 입장이 제한됩니다",
+              "엘리베이터 및 호텔 내 이동 시에는 애견 이동가방 또는 유모차를 이용해야 합니다 (유모차 대여 가능)",
+              "호텔 외부에서 이동 시에는 반드시 리드줄을 착용해 주시기 바라며, 호텔 및 객실 출입문 주변에 리드줄이 끼지 않도록 주의해 주시기 바랍니다",
+              "패키지 혜택으로 제공되는 어메니티 및 서비스는 투숙당 1회 제공됩니다",
+              "반려견을 호텔 내에 홀로 두어서는 안되며 소음 등으로 인해 피해가 발생할 경우 입장 제한 및 퇴실 요청이 있을 수 있습니다",
+              "호텔은 반려견과 투숙으로 인한 기물파손, 오염으로 인한 청소 및 보수에 대해 퇴실 이후 손해배상을 청구할 수 있습니다",
+              "입질, 심한 짖음, 심한 공격성, 마운팅이 있는 애견은 입장 제한 및 퇴실 요청이 있을 수 있습니다",
+              "공공질서와 모두의 편안한 투숙을 위하여 반려견의 모든 행동을 유의해 주시기 바랍니다",
+              "고객의 부주의로 인한 사고 및 반려견 분실의 경우 당 호텔에서는 책임을 지지 않습니다"
+            ]
+          },
+          {
+            "title": "조식 정보",
+            "contents": [
+              "델리시오소 / 1층 / 06:30~10:00",
+              "정상가: 1인 38,000원(중학생~성인), 25,000원(초등학생), 20,000원(만 3세~미취학)",
+              "현장결제"
+            ]
+          },
+          {
+            "title": "취소 및 환불 규정",
+            "contents": [
+              "체크인일 기준 2일 전 : 100% 환불",
+              "체크인일 기준 1일 전~당일 및 No-Show : 환불불가",
+              "취소, 환불시 수수료가 발생할 수 있습니다"
+            ]
+          },
+          {
+            "title": "확인사항 및 기타",
+            "contents": [
+              "최대인원 초과시 입실 불가합니다",
+              "위의 정보는 호텔의 사정에 따라 변경될 수 있습니다",
+              "해당 이미지는 실제와 상이 할 수 있습니다",
+              "체크인 시 배정 또는 베드타입 미기재 상품은 특정객실과 베드타입을 보장하지 않습니다",
+              "해당 객실가는 세금, 봉사료가 포함된 금액입니다",
+              "미성년자는 보호자 동반없이 이용하실 수 없습니다"
+            ]
+          }
+        ],
+        "traffic": {
+          "title": "주변정보",
+          "contents": [
+            "원주역 차량 17분",
+            "원주역사박물관 차량 5분",
+            "치악민속박물관 차량 9분"
+          ]
+        },
+        "emblems": [],
+        "event": null,
+        "rooms": [
+          {
+            "type": "NON_MOTEL",
+            "id": 556381,
+            "name": "스탠다드 더블룸",
+            "images": [
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9adeece7.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9a84c2be.jpg"
+              }
+            ],
+            "newImages": [
+              {
+                "image": "https://image.withstatic.com/323/392/193/c270f9835c3242ad866f612544e92f64.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/14/141/185/fc02b84641f741c58b9bf3c6315e5b18.jpg"
+              }
+            ],
+            "rent": null,
+            "stay": {
+              "id": 556381,
+              "name": "스탠다드 더블룸",
+              "title": null,
+              "label": {
+                "option": null,
+                "checkInOut": "입실 15:00·퇴실 11:00",
+                "checkInTime": "15:00",
+                "checkOutTime": "11:00",
+                "closeTime": null,
+                "people": null,
+                "remain": null,
+                "cancel": "무료취소 - 8월 14일 23:59까지",
+                "cancelType": "FREE",
+                "serviceFee": null,
+                "discounts": []
+              },
+              "price": {
+                "salePrice": 190000,
+                "strikePrice": null,
+                "discountPrice": 190000,
+                "totalPrice": 190000,
+                "discountTotalPrice": 190000,
+                "discountRate": null,
+                "continuousText": null,
+                "totalWithoutCouponDiscountPrice": null
+              },
+              "badges": [],
+              "coupon": null,
+              "addCoupon": null,
+              "stockCount": 13,
+              "additional": null,
+              "rewardPoint": null
+            },
+            "promotions": [
+              {
+                "title": "객실정보",
+                "content": {
+                  "text": "기준2인 · 최대2인",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              }
+            ],
+            "badges": [],
+            "additional": {
+              "basePersonalCount": 2,
+              "maxPersonalCount": 2,
+              "isPersonalCharging": false,
+              "isEarlyCheckIn": false,
+              "isWalkOnly": false,
+              "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+              "guesthouseRoomTypeName": "개인실",
+              "packageText": null,
+              "extendText": null,
+              "guesthouseIntroduction": null,
+              "confirmationType": 0,
+              "isDayUse": false,
+              "isHardBlock": false,
+              "supplier": "SANHA",
+              "status": "OPEN",
+              "isCancelableInApp": true,
+              "isCancelable": false
+            },
+            "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9adeece7.jpg"
+          },
+          {
+            "type": "NON_MOTEL",
+            "id": 556383,
+            "name": "스탠다드 트윈룸",
+            "images": [
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9beb36de.jpg"
+              }
+            ],
+            "newImages": [
+              {
+                "image": "https://image.withstatic.com/9/65/11/f915f8813bf84ecea1f9bf6483932829.jpg"
+              }
+            ],
+            "rent": null,
+            "stay": {
+              "id": 556383,
+              "name": "스탠다드 트윈룸",
+              "title": null,
+              "label": {
+                "option": null,
+                "checkInOut": "입실 15:00·퇴실 11:00",
+                "checkInTime": "15:00",
+                "checkOutTime": "11:00",
+                "closeTime": null,
+                "people": null,
+                "remain": null,
+                "cancel": "무료취소 - 8월 14일 23:59까지",
+                "cancelType": "FREE",
+                "serviceFee": null,
+                "discounts": []
+              },
+              "price": {
+                "salePrice": 200000,
+                "strikePrice": null,
+                "discountPrice": 200000,
+                "totalPrice": 200000,
+                "discountTotalPrice": 200000,
+                "discountRate": null,
+                "continuousText": null,
+                "totalWithoutCouponDiscountPrice": null
+              },
+              "badges": [],
+              "coupon": null,
+              "addCoupon": null,
+              "stockCount": 32,
+              "additional": null,
+              "rewardPoint": null
+            },
+            "promotions": [
+              {
+                "title": "객실정보",
+                "content": {
+                  "text": "기준3인 · 최대3인",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              }
+            ],
+            "badges": [],
+            "additional": {
+              "basePersonalCount": 3,
+              "maxPersonalCount": 3,
+              "isPersonalCharging": false,
+              "isEarlyCheckIn": false,
+              "isWalkOnly": false,
+              "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+              "guesthouseRoomTypeName": "개인실",
+              "packageText": null,
+              "extendText": null,
+              "guesthouseIntroduction": null,
+              "confirmationType": 0,
+              "isDayUse": false,
+              "isHardBlock": false,
+              "supplier": "SANHA",
+              "status": "OPEN",
+              "isCancelableInApp": true,
+              "isCancelable": false
+            },
+            "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9beb36de.jpg"
+          },
+          {
+            "type": "NON_MOTEL",
+            "id": 556387,
+            "name": "디럭스 더블룸",
+            "images": [
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9e6caf85.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9e80f547.jpg"
+              }
+            ],
+            "newImages": [
+              {
+                "image": "https://image.withstatic.com/188/473/12/11f375b878484751a1009c7d00046016.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/156/166/101/484abe6826e9494b8e1a67a70f8102c3.jpg"
+              }
+            ],
+            "rent": null,
+            "stay": {
+              "id": 556387,
+              "name": "디럭스 더블룸",
+              "title": null,
+              "label": {
+                "option": null,
+                "checkInOut": "입실 15:00·퇴실 11:00",
+                "checkInTime": "15:00",
+                "checkOutTime": "11:00",
+                "closeTime": null,
+                "people": null,
+                "remain": null,
+                "cancel": "무료취소 - 8월 14일 23:59까지",
+                "cancelType": "FREE",
+                "serviceFee": null,
+                "discounts": []
+              },
+              "price": {
+                "salePrice": 200000,
+                "strikePrice": null,
+                "discountPrice": 200000,
+                "totalPrice": 200000,
+                "discountTotalPrice": 200000,
+                "discountRate": null,
+                "continuousText": null,
+                "totalWithoutCouponDiscountPrice": null
+              },
+              "badges": [],
+              "coupon": null,
+              "addCoupon": null,
+              "stockCount": 10,
+              "additional": null,
+              "rewardPoint": null
+            },
+            "promotions": [
+              {
+                "title": "객실정보",
+                "content": {
+                  "text": "기준2인 · 최대2인",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              }
+            ],
+            "badges": [],
+            "additional": {
+              "basePersonalCount": 2,
+              "maxPersonalCount": 2,
+              "isPersonalCharging": false,
+              "isEarlyCheckIn": false,
+              "isWalkOnly": false,
+              "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+              "guesthouseRoomTypeName": "개인실",
+              "packageText": null,
+              "extendText": null,
+              "guesthouseIntroduction": null,
+              "confirmationType": 0,
+              "isDayUse": false,
+              "isHardBlock": false,
+              "supplier": "SANHA",
+              "status": "OPEN",
+              "isCancelableInApp": true,
+              "isCancelable": false
+            },
+            "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9e6caf85.jpg"
+          },
+          {
+            "type": "NON_MOTEL",
+            "id": 556386,
+            "name": "스탠다드 온돌",
+            "images": [
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec380a21e9.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec381a387a.jpg"
+              }
+            ],
+            "newImages": [
+              {
+                "image": "https://image.withstatic.com/340/433/38/4d91caedec474041a364c519f14f78e4.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/185/358/401/a498f21ad04e43ebbbf12bbd41f9c44f.jpg"
+              }
+            ],
+            "rent": null,
+            "stay": {
+              "id": 556386,
+              "name": "스탠다드 온돌",
+              "title": null,
+              "label": {
+                "option": null,
+                "checkInOut": "입실 15:00·퇴실 11:00",
+                "checkInTime": "15:00",
+                "checkOutTime": "11:00",
+                "closeTime": null,
+                "people": null,
+                "remain": "이 가격으로 남은 객실 1개",
+                "cancel": "무료취소 - 8월 14일 23:59까지",
+                "cancelType": "FREE",
+                "serviceFee": null,
+                "discounts": []
+              },
+              "price": {
+                "salePrice": 210000,
+                "strikePrice": null,
+                "discountPrice": 210000,
+                "totalPrice": 210000,
+                "discountTotalPrice": 210000,
+                "discountRate": null,
+                "continuousText": null,
+                "totalWithoutCouponDiscountPrice": null
+              },
+              "badges": [],
+              "coupon": null,
+              "addCoupon": null,
+              "stockCount": 1,
+              "additional": null,
+              "rewardPoint": null
+            },
+            "promotions": [
+              {
+                "title": "객실정보",
+                "content": {
+                  "text": "기준3인 · 최대3인",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              },
+              {
+                "title": "추가정보",
+                "content": {
+                  "text": "하반기 계절 난방 작동 불가 (매년 10월 말까지)",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              }
+            ],
+            "badges": [],
+            "additional": {
+              "basePersonalCount": 3,
+              "maxPersonalCount": 3,
+              "isPersonalCharging": false,
+              "isEarlyCheckIn": false,
+              "isWalkOnly": false,
+              "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+              "guesthouseRoomTypeName": "개인실",
+              "packageText": null,
+              "extendText": "하반기 계절 난방 작동 불가 (매년 10월 말까지)",
+              "guesthouseIntroduction": null,
+              "confirmationType": 0,
+              "isDayUse": false,
+              "isHardBlock": false,
+              "supplier": "SANHA",
+              "status": "OPEN",
+              "isCancelableInApp": true,
+              "isCancelable": false
+            },
+            "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec380a21e9.jpg"
+          },
+          {
+            "type": "NON_MOTEL",
+            "id": 556388,
+            "name": "디럭스 트윈룸",
+            "images": [
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9f6a9e6b.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9f7bd417.jpg"
+              }
+            ],
+            "newImages": [
+              {
+                "image": "https://image.withstatic.com/81/49/92/1943531123764ae19ba5792aac9d8487.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/207/278/445/a524ae478b114e7ba5a63619152a565f.jpg"
+              }
+            ],
+            "rent": null,
+            "stay": {
+              "id": 556388,
+              "name": "디럭스 트윈룸",
+              "title": null,
+              "label": {
+                "option": null,
+                "checkInOut": "입실 15:00·퇴실 11:00",
+                "checkInTime": "15:00",
+                "checkOutTime": "11:00",
+                "closeTime": null,
+                "people": null,
+                "remain": null,
+                "cancel": "무료취소 - 8월 14일 23:59까지",
+                "cancelType": "FREE",
+                "serviceFee": null,
+                "discounts": []
+              },
+              "price": {
+                "salePrice": 210000,
+                "strikePrice": null,
+                "discountPrice": 210000,
+                "totalPrice": 210000,
+                "discountTotalPrice": 210000,
+                "discountRate": null,
+                "continuousText": null,
+                "totalWithoutCouponDiscountPrice": null
+              },
+              "badges": [],
+              "coupon": null,
+              "addCoupon": null,
+              "stockCount": 26,
+              "additional": null,
+              "rewardPoint": null
+            },
+            "promotions": [
+              {
+                "title": "객실정보",
+                "content": {
+                  "text": "기준3인 · 최대3인",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              }
+            ],
+            "badges": [],
+            "additional": {
+              "basePersonalCount": 3,
+              "maxPersonalCount": 3,
+              "isPersonalCharging": false,
+              "isEarlyCheckIn": false,
+              "isWalkOnly": false,
+              "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+              "guesthouseRoomTypeName": "개인실",
+              "packageText": null,
+              "extendText": null,
+              "guesthouseIntroduction": null,
+              "confirmationType": 0,
+              "isDayUse": false,
+              "isHardBlock": false,
+              "supplier": "SANHA",
+              "status": "OPEN",
+              "isCancelableInApp": true,
+              "isCancelable": false
+            },
+            "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9f6a9e6b.jpg"
+          },
+          {
+            "type": "NON_MOTEL",
+            "id": 556391,
+            "name": "펫룸",
+            "images": [
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec366b59d4.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec367c905b.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec365c3c9a.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2025/02/20/67b6790f8880f.jpg"
+              }
+            ],
+            "newImages": [
+              {
+                "image": "https://image.withstatic.com/53/393/476/bf120cd9fd774799acc2300508ad9057.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/184/438/153/e6a7f2042bf340b6ad1186906d35391c.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/174/73/79/d6914a9b5a6d4f6eb689ccde868ce1ae.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/261/18/306/d2099c45228b4d569d1f556ece36ac64.jpg"
+              }
+            ],
+            "rent": null,
+            "stay": {
+              "id": 556391,
+              "name": "펫룸",
+              "title": null,
+              "label": {
+                "option": null,
+                "checkInOut": "입실 15:00·퇴실 11:00",
+                "checkInTime": "15:00",
+                "checkOutTime": "11:00",
+                "closeTime": null,
+                "people": null,
+                "remain": "이 가격으로 남은 객실 2개",
+                "cancel": "무료취소 - 8월 14일 23:59까지",
+                "cancelType": "FREE",
+                "serviceFee": null,
+                "discounts": []
+              },
+              "price": {
+                "salePrice": 220000,
+                "strikePrice": null,
+                "discountPrice": 220000,
+                "totalPrice": 220000,
+                "discountTotalPrice": 220000,
+                "discountRate": null,
+                "continuousText": null,
+                "totalWithoutCouponDiscountPrice": null
+              },
+              "badges": [],
+              "coupon": null,
+              "addCoupon": null,
+              "stockCount": 2,
+              "additional": null,
+              "rewardPoint": null
+            },
+            "promotions": [
+              {
+                "title": "객실정보",
+                "content": {
+                  "text": "기준2인 · 최대2인",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              },
+              {
+                "title": "추가정보",
+                "content": {
+                  "text": "반려동물 1마리 동반 입실 가능(호텔 문의 필수)/반려견 체중 10kg 이하 필수(시각장애인 안내견 제한없음)",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              }
+            ],
+            "badges": [],
+            "additional": {
+              "basePersonalCount": 2,
+              "maxPersonalCount": 2,
+              "isPersonalCharging": false,
+              "isEarlyCheckIn": false,
+              "isWalkOnly": false,
+              "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+              "guesthouseRoomTypeName": "개인실",
+              "packageText": null,
+              "extendText": "반려동물 1마리 동반 입실 가능(호텔 문의 필수)/반려견 체중 10kg 이하 필수(시각장애인 안내견 제한없음)",
+              "guesthouseIntroduction": null,
+              "confirmationType": 0,
+              "isDayUse": false,
+              "isHardBlock": false,
+              "supplier": "SANHA",
+              "status": "OPEN",
+              "isCancelableInApp": true,
+              "isCancelable": false
+            },
+            "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec366b59d4.jpg"
+          },
+          {
+            "type": "NON_MOTEL",
+            "id": 556390,
+            "name": "IB스위트",
+            "images": [
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1b8a5a4.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1dbd8c8.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1ca477f.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1bed3ef.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa2e8c29e.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa28e5702.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa2a13d8b.jpg"
+              }
+            ],
+            "newImages": [
+              {
+                "image": "https://image.withstatic.com/180/244/192/ff870add90df40d4b6cd80e675905ab0.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/171/492/371/4844f98c3dfd40cdb2800533d80c8b54.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/472/248/299/f6d1f9a8fb564910a30297ab0cd7a42e.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/374/385/38/0743f7e2e5494feaa3f1be615342938e.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/173/227/288/37b7c75a3c7945279ebe72a52dd0898b.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/46/467/23/2f51974b800c4d7c82166a81049798a5.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/357/436/289/40f67c51b7454764bb075ea1a2c55a08.jpg"
+              }
+            ],
+            "rent": null,
+            "stay": {
+              "id": 556390,
+              "name": "IB스위트",
+              "title": null,
+              "label": {
+                "option": null,
+                "checkInOut": "입실 15:00·퇴실 11:00",
+                "checkInTime": "15:00",
+                "checkOutTime": "11:00",
+                "closeTime": null,
+                "people": null,
+                "remain": "이 가격으로 남은 객실 2개",
+                "cancel": "무료취소 - 8월 14일 23:59까지",
+                "cancelType": "FREE",
+                "serviceFee": null,
+                "discounts": []
+              },
+              "price": {
+                "salePrice": 310000,
+                "strikePrice": null,
+                "discountPrice": 310000,
+                "totalPrice": 310000,
+                "discountTotalPrice": 310000,
+                "discountRate": null,
+                "continuousText": null,
+                "totalWithoutCouponDiscountPrice": null
+              },
+              "badges": [],
+              "coupon": null,
+              "addCoupon": null,
+              "stockCount": 2,
+              "additional": null,
+              "rewardPoint": null
+            },
+            "promotions": [
+              {
+                "title": "객실정보",
+                "content": {
+                  "text": "기준3인 · 최대3인",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              }
+            ],
+            "badges": [],
+            "additional": {
+              "basePersonalCount": 3,
+              "maxPersonalCount": 3,
+              "isPersonalCharging": false,
+              "isEarlyCheckIn": false,
+              "isWalkOnly": false,
+              "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+              "guesthouseRoomTypeName": "개인실",
+              "packageText": null,
+              "extendText": null,
+              "guesthouseIntroduction": null,
+              "confirmationType": 0,
+              "isDayUse": false,
+              "isHardBlock": false,
+              "supplier": "SANHA",
+              "status": "OPEN",
+              "isCancelableInApp": true,
+              "isCancelable": false
+            },
+            "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1b8a5a4.jpg"
+          },
+          {
+            "type": "NON_MOTEL",
+            "id": 556398,
+            "name": "파티룸C",
+            "images": [
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec355b5dbc.jpg"
+              },
+              {
+                "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec356b34b0.jpg"
+              }
+            ],
+            "newImages": [
+              {
+                "image": "https://image.withstatic.com/390/72/424/f57edd6234c54e08bf7cd1a03280be5f.jpg"
+              },
+              {
+                "image": "https://image.withstatic.com/98/413/286/b72bd68fedcc40be875d8445fb3f3177.jpg"
+              }
+            ],
+            "rent": null,
+            "stay": {
+              "id": 556398,
+              "name": "파티룸C",
+              "title": null,
+              "label": {
+                "option": null,
+                "checkInOut": "입실 15:00·퇴실 11:00",
+                "checkInTime": "15:00",
+                "checkOutTime": "11:00",
+                "closeTime": null,
+                "people": null,
+                "remain": "이 가격으로 남은 객실 1개",
+                "cancel": "무료취소 - 8월 14일 23:59까지",
+                "cancelType": "FREE",
+                "serviceFee": null,
+                "discounts": []
+              },
+              "price": {
+                "salePrice": 410000,
+                "strikePrice": null,
+                "discountPrice": 410000,
+                "totalPrice": 410000,
+                "discountTotalPrice": 410000,
+                "discountRate": null,
+                "continuousText": null,
+                "totalWithoutCouponDiscountPrice": null
+              },
+              "badges": [],
+              "coupon": null,
+              "addCoupon": null,
+              "stockCount": 1,
+              "additional": null,
+              "rewardPoint": null
+            },
+            "promotions": [
+              {
+                "title": "객실정보",
+                "content": {
+                  "text": "기준6인 · 최대6인",
+                  "badges": null,
+                  "type": "TEXT"
+                }
+              }
+            ],
+            "badges": [],
+            "additional": {
+              "basePersonalCount": 6,
+              "maxPersonalCount": 6,
+              "isPersonalCharging": false,
+              "isEarlyCheckIn": false,
+              "isWalkOnly": false,
+              "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+              "guesthouseRoomTypeName": "개인실",
+              "packageText": null,
+              "extendText": null,
+              "guesthouseIntroduction": null,
+              "confirmationType": 0,
+              "isDayUse": false,
+              "isHardBlock": false,
+              "supplier": "SANHA",
+              "status": "OPEN",
+              "isCancelableInApp": true,
+              "isCancelable": false
+            },
+            "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec355b5dbc.jpg"
+          }
+        ],
+        "theme": {
+          "title": "편의시설 및 서비스",
+          "items": [
+            {
+              "id": 41,
+              "name": "피트니스",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_fitness.svg"
+            },
+            {
+              "id": 54,
+              "name": "반려견동반",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_pet.svg"
+            },
+            {
+              "id": 42,
+              "name": "수영장",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_swim.svg"
+            },
+            {
+              "id": 50,
+              "name": "미니바",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_minibar.svg"
+            },
+            {
+              "id": 44,
+              "name": "사우나",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_spa.svg"
+            },
+            {
+              "id": 47,
+              "name": "무선인터넷",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_wifi.svg"
+            },
+            {
+              "id": 45,
+              "name": "골프장",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_golf.svg"
+            },
+            {
+              "id": 49,
+              "name": "욕실용품",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_bathroom_supplies.svg"
+            },
+            {
+              "id": 46,
+              "name": "레스토랑",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_restaurant.svg"
+            },
+            {
+              "id": 134,
+              "name": "금연",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_no_smoking.svg"
+            },
+            {
+              "id": 197,
+              "name": "TV",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_tv.svg"
+            },
+            {
+              "id": 198,
+              "name": "에어컨",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_air_conditioning.svg"
+            },
+            {
+              "id": 199,
+              "name": "냉장고",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_refrigerator.svg"
+            },
+            {
+              "id": 132,
+              "name": "짐보관가능",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_baggage.svg"
+            },
+            {
+              "id": 200,
+              "name": "샤워실",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_shower.svg"
+            },
+            {
+              "id": 201,
+              "name": "욕조",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_bathtub.svg"
+            },
+            {
+              "id": 136,
+              "name": "무료주차",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_car.svg"
+            },
+            {
+              "id": 141,
+              "name": "카페",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_cafe.svg"
+            },
+            {
+              "id": 202,
+              "name": "드라이기",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_hair_dryer.svg"
+            },
+            {
+              "id": 207,
+              "name": "카드결제",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_card.svg"
+            },
+            {
+              "id": 356,
+              "name": "금고",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_strongbox.svg"
+            },
+            {
+              "id": 369,
+              "name": "전기주전자",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_electric_kettle.svg"
+            },
+            {
+              "id": 195,
+              "name": "주차장",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_car.svg"
+            },
+            {
+              "id": 336,
+              "name": "장애인편의",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_bathchair.svg"
+            },
+            {
+              "id": 112,
+              "name": "엘리베이터",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_elevator.svg"
+            },
+            {
+              "id": 771,
+              "name": "스프링클러",
+              "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_sprinkler.svg"
+            }
+          ]
+        },
+        "black": null,
+        "braze": {
+          "areas": [
+            {
+              "id": 2008,
+              "name": "강원",
+              "subId": 2085,
+              "subName": "춘천·원주·영월·태백"
+            }
+          ],
+          "subways": []
+        },
+        "categoryEventBanners": [
+          {
+            "title": "국내여행 오픈런",
+            "image": "https://image.otaY.kr/exhibition/cms/e4224_dnpqqosj_1200x480_20241215225622_20250115104301.png",
+            "url": "https://www.otaY.com/event/4457?title=%EA%B5%AD%EB%82%B4%EC%97%AC%ED%96%89+%EC%98%A4%ED%94%88%EB%9F%B0&url=https%3A%2F%2Fapi3.otaY.kr%2Fevent3%2Fweb%2FadEventView%3Faevno%3D4457"
+          },
+          {
+            "title": "막바지 여름 호캉스 할인 중!",
+            "image": "https://image.otaY.kr/exhibition/cms/Navy_20250807165410.png",
+            "url": "https://www.otaY.com/special-deal/P20250613145149651"
+          },
+          {
+            "title": "8월 엘리트 특가위크",
+            "image": "https://image.otaY.kr/exhibition/cms/e5234_ghaqosj_1200x480_20250808135820.png",
+            "url": "https://www.otaY.com/event/5234?title=8%EC%9B%94+%EC%97%98%EB%A6%AC%ED%8A%B8+%ED%8A%B9%EA%B0%80%EC%9C%84%ED%81%AC&url=https%3A%2F%2Fapi3.otaY.kr%2Fevent3%2Fweb%2FadEventView%3Faevno%3D5234"
+          },
+          {
+            "title": "찐 리얼리뷰 추천 숙소 모음",
+            "image": "https://image.otaY.kr/exhibition/cms/e5185_WEB_1200x480_1_20250725113147.png",
+            "url": "https://www.otaY.com/event/5185?title=%EC%B0%90+%EB%A6%AC%EC%96%BC%EB%A6%AC%EB%B7%B0+%EC%B6%94%EC%B2%9C+%EC%88%99%EC%86%8C+%EB%AA%A8%EC%9D%8C&url=https%3A%2F%2Fapi3.otaY.kr%2Fevent3%2Fweb%2FadEventView%3Faevno%3D5185"
+          },
+          {
+            "title": "8월 결제사 모음",
+            "image": "https://image.otaY.kr/exhibition/cms/e5223_dnpqqosj_1200x480_20250730223101.png",
+            "url": "https://www.otaY.com/event/5223?title=8%EC%9B%94+%EA%B2%B0%EC%A0%9C%EC%82%AC+%EB%AA%A8%EC%9D%8C&url=https%3A%2F%2Fapi3.otaY.kr%2Fevent3%2Fweb%2FadEventView%3Faevno%3D5223"
+          }
+        ],
+        "motelEvents": [],
+        "noneMotelEvents": [],
+        "promotion": null,
+        "membership": null,
+        "disposableItemsPolicyNotice": {
+          "title": "이용 안내",
+          "subTitle": "일회용품 줄이기 함께 실천해요",
+          "content": [
+            "자원재활용법에 따라 2024년 3월 29일부터 일부 숙소에서는 일회용 어메니티가 무료로 제공되지 않아요.",
+            "일회용 어메니티 별도 구매는 숙소에 문의해주세요."
+          ]
+        },
+        "lowestPrice": {
+          "lowestPrice": 190000,
+          "consecutiveText": null,
+          "rewardPoint": null,
+          "coupon": null,
+          "addCoupon": null
+        },
+        "isWish": false
+      },
+      "initialReviewInfo": {
+        "product": {
+          "id": 6849,
+          "name": "호텔 인터불고 원주",
+          "rating": 8.8,
+          "ratingReviewCount": 207,
+          "serviceReviewCount": 207,
+          "imageReviewCount": 46,
+          "appCategoryId": 2
+        },
+        "reviews": [
+          {
+            "createdAt": "2025-07-28T10:49:27+0900",
+            "updatedAt": "2025-08-04T18:01:06+0900",
+            "reviewId": 27158924,
+            "supplierKey": "GC",
+            "title": null,
+            "rating": 9.3,
+            "content": "넓은 주차장이 가장 마음에 들고 직원분들이 대체로 친절합니다.\n한켠에 소규모의 편의점이 있어 편리합니다.\n실내 시설물 관리 및 청결 상태도 양호하네요.\n인근에 혁신도시가 있어 먹거리 문제도 비교적 쉽게 해결이 됩니다.\n다음엔 조식도 이용해볼 계획입니다.",
+            "contentLanguage": "kor",
+            "likeCount": 1,
+            "isLiked": false,
+            "isBestReview": false,
+            "isRealReview": false,
+            "isImageReview": false,
+            "isEditable": false,
+            "isUserMasked": false,
+            "isHidden": false,
+            "status": "ACTIVE",
+            "images": [],
+            "addition": {
+              "travelerType": null,
+              "spaceGroupName": "스탠다드 패밀리 트윈룸"
+            },
+            "comments": [
+              {
+                "createdAt": "2025-07-30T14:12:54+0900",
+                "updatedAt": "2025-07-30T14:12:54+0900",
+                "id": 4294868,
+                "userType": "PARTNER",
+                "userNickName": "제휴점 답변",
+                "content": "미님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n고객님의 만족과 신뢰에 보답할 수 있도록 최선을 다하는 호텔 인터불고 원주가 되겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+              }
+            ],
+            "writtenBy": {
+              "id": 8797015,
+              "nickName": "미래갑부",
+              "isUsingProfileImage": false,
+              "profileImage": "https://image.otaY.kr/profile/ico/ico_21.png",
+              "isTripHolic": false,
+              "tripHolicTerm": 0,
+              "reviewCount": 8,
+              "reviewImageCount": 17,
+              "reviewProductCount": 8,
+              "isWithdrawn": false
+            }
+          },
+          {
+            "createdAt": "2025-01-12T17:36:35+0900",
+            "updatedAt": "2025-01-12T17:36:35+0900",
+            "reviewId": 23337113,
+            "supplierKey": "GC",
+            "title": null,
+            "rating": 10,
+            "content": "체크인15시,체크아웃11시\n주차장은 호텔 옆에 넓게 있습니다\n로비는 아직 연말 분위기가  넘치네요\n3인가족이라 트원룸으로 이용했습니다 \n기본 생수2병 외에는 모~두 유료인 미니바입니다ㅋㅋ\n욕실도 깔끔하고 욕조도있고 샤워공간이 따로 분리되어있어 좋습니다\n바로앞이 소방서뷰인데 옆으로 대형식자재마트가보여서 나가서 간단하게 사와서 저녁을 해결했습니다\n조식시간은 6시30분~10시라고하던데 저희는 이용하지않았습니다\n투숙객은 사전 할인됩니다\n10시쯤 체크아웃하는데 로비가 한산했습니다\nPS:장점:1.다른곳보다 룸이 넓은편인듯 2.주차장이 넓어 걱정없음\n단점:없음\n3인가족 편히 잘 쉬다왔습니다",
+            "contentLanguage": "kor",
+            "likeCount": 0,
+            "isLiked": false,
+            "isBestReview": false,
+            "isRealReview": false,
+            "isImageReview": true,
+            "isEditable": false,
+            "isUserMasked": false,
+            "isHidden": false,
+            "status": "ACTIVE",
+            "images": [
+              {
+                "id": 4932399,
+                "url": "https://image.withstatic.com/10/429/17/f831e11b307343419ef247ede379b008.jpg"
+              },
+              {
+                "id": 4932400,
+                "url": "https://image.withstatic.com/223/242/48/98ba6d3718be4372817d99b3a1cde4a8.jpg"
+              },
+              {
+                "id": 4932401,
+                "url": "https://image.withstatic.com/349/239/425/9d3af7155b1c4603be6c6e71d741a979.jpg"
+              },
+              {
+                "id": 4932402,
+                "url": "https://image.withstatic.com/403/217/288/87f2bdbc001a4a05b9a786da63b0464d.jpg"
+              },
+              {
+                "id": 4932403,
+                "url": "https://image.withstatic.com/18/71/341/37b15cb2662d4417adaddee05c0ee7ef.jpg"
+              }
+            ],
+            "addition": {
+              "travelerType": null,
+              "spaceGroupName": "스탠다드 트윈룸"
+            },
+            "comments": [
+              {
+                "createdAt": "2025-01-16T09:39:15+0900",
+                "updatedAt": "2025-01-16T09:39:15+0900",
+                "id": 3896687,
+                "userType": "PARTNER",
+                "userNickName": "제휴점 답변",
+                "content": "까칠한아저씨넘버1님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n고객님의 만족과 신뢰에 보답할 수 있도록 최선을 다하는 호텔 인터불고 원주가 되겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+              }
+            ],
+            "writtenBy": {
+              "id": 144575,
+              "nickName": "까칠한아저씨넘버1",
+              "isUsingProfileImage": true,
+              "profileImage": "https://image.withstatic.com/112/387/473/f7ac7104ee1849fcafe9321262d120e3.jpg",
+              "isTripHolic": true,
+              "tripHolicTerm": 25,
+              "reviewCount": 248,
+              "reviewImageCount": 829,
+              "reviewProductCount": 119,
+              "isWithdrawn": false
+            }
+          },
+          {
+            "createdAt": "2024-11-24T21:27:10+0900",
+            "updatedAt": "2024-11-24T21:27:10+0900",
+            "reviewId": 22243308,
+            "supplierKey": "GC",
+            "title": null,
+            "rating": 10,
+            "content": "1. 위치.\n번화가 조금 옆에 있어서 조용하고\n창문 넘어 경치가 아주 좋습니다.\n\n\n2. 주변.\n주변에 시설은 많이 없어요\n편의점식당 차타고조금나가야합니다.\n출장일이 많아 이곳저곳 자는일이 많은데.\n주변이조용하고 한적하니 운치있네요.\n\n3. 주차.\n주차자리도 엄청 많고 주차장도 매우넓어요.편리하게 주차가능합니다\n\n\n4.친절도.\n프론트 직원분도 엄청 친절하세요.\n상냥하시고 친절하게 설명도 해주시고 감사했습니다.\n\n5. 청결.\n룸 컨디션 매우 좋습니다.\n이불이나, 침대도 깨끗하고\n욕실이며 이것저것 정리정돈도 잘되어 있어요.\n화장실은 역시 비대로 되어있어 만족\n\n6. 시설.\n1층에 카페있고.\n아침일찍 출근이라 조식은이용을못했네요\n웨딩홀도있었어요. 로비조명이며 분위기도최고\n방도넓고 이불이 가벼워서 아주 좋았어요.\n\n7.가성비\n가성비또한아주좋습니다\n가격에비해 시설이며컨디션마음에드네요.\n다음에오면 또이용할겁니다.",
+            "contentLanguage": "kor",
+            "likeCount": 0,
+            "isLiked": false,
+            "isBestReview": false,
+            "isRealReview": false,
+            "isImageReview": true,
+            "isEditable": false,
+            "isUserMasked": false,
+            "isHidden": false,
+            "status": "ACTIVE",
+            "images": [
+              {
+                "id": 4584991,
+                "url": "https://image.withstatic.com/126/282/10/e3b4cfb2d81346d2afa758fd20826fa5.jpg"
+              },
+              {
+                "id": 4584992,
+                "url": "https://image.withstatic.com/305/198/212/bdebff0ebe04458ba891806632305cc2.jpg"
+              },
+              {
+                "id": 4584993,
+                "url": "https://image.withstatic.com/392/269/141/268fd2544d27485e90b3c5729b85bd02.jpg"
+              }
+            ],
+            "addition": {
+              "travelerType": null,
+              "spaceGroupName": "스탠다드 패밀리 트윈룸"
+            },
+            "comments": [
+              {
+                "createdAt": "2024-11-28T09:36:30+0900",
+                "updatedAt": "2024-11-28T09:36:30+0900",
+                "id": 3795813,
+                "userType": "PARTNER",
+                "userNickName": "제휴점 답변",
+                "content": "집은갑갑해님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n고객님의 깊은 관심으로 고견을 공유해 주시고 호텔의 발전을 위해 도움을 주신 점 감사합니다.\n다음 투숙도 만족하실 수 있는 서비스를 제공해드리기 위해 최선을 다하겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+              }
+            ],
+            "writtenBy": {
+              "id": 6876488,
+              "nickName": "집은갑갑해",
+              "isUsingProfileImage": false,
+              "profileImage": "https://image.otaY.kr/profile/ico/ico_21.png",
+              "isTripHolic": false,
+              "tripHolicTerm": 0,
+              "reviewCount": 26,
+              "reviewImageCount": 56,
+              "reviewProductCount": 23,
+              "isWithdrawn": false
+            }
+          },
+          {
+            "createdAt": "2025-04-06T20:17:49+0900",
+            "updatedAt": "2025-04-06T20:17:49+0900",
+            "reviewId": 25048140,
+            "supplierKey": "GC",
+            "title": null,
+            "rating": 10,
+            "content": "서울에서 가족들이 와서 반려견 동반 가능한 숙소 찾아보다가 예약했는데 기대이상으로 너무 좋았습니다. 방도 크도 화장실도 넓고 편하게 잘 잤어요 객실도 깨끗하고 침대도 푹신해서 모두 만족했습니다 비가와서 밖에 나가진 못했지만 아침에 반려견 놀이터도 잠깐 나갔다와봤어요 체크인 할 때 강아지 선물도 주셨어요 간식이랑 샴푸도 받고 직원분들 너무 친절하셔서 기분 좋았습니다 원주에 애견동반 숙소가 많지 않은데 다음번에 가족들이 오게되면 또 이용할 생각입니다 잘 쉬고 갑니다!!",
+            "contentLanguage": "kor",
+            "likeCount": 0,
+            "isLiked": false,
+            "isBestReview": false,
+            "isRealReview": false,
+            "isImageReview": true,
+            "isEditable": false,
+            "isUserMasked": false,
+            "isHidden": false,
+            "status": "ACTIVE",
+            "images": [
+              {
+                "id": 5536530,
+                "url": "https://image.withstatic.com/303/324/448/28207a0ce4494420a16e62ec6524acda.jpg"
+              },
+              {
+                "id": 5536531,
+                "url": "https://image.withstatic.com/88/252/368/def4d6949a984e10b51258d4b7a49c88.jpg"
+              },
+              {
+                "id": 5536532,
+                "url": "https://image.withstatic.com/122/373/316/454c7ad618e94d9e98beb18dbc3d6f64.jpg"
+              }
+            ],
+            "addition": {
+              "travelerType": null,
+              "spaceGroupName": "펫 스위트"
+            },
+            "comments": [
+              {
+                "createdAt": "2025-04-10T13:13:34+0900",
+                "updatedAt": "2025-04-10T13:13:34+0900",
+                "id": 4075217,
+                "userType": "PARTNER",
+                "userNickName": "제휴점 답변",
+                "content": "KHANNNNNN님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n고객님의 따뜻한 리뷰는 호텔 전직원이 공유하여 더 나은 서비스를 제공해드리기 위한 동기로 삼겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+              }
+            ],
+            "writtenBy": {
+              "id": 13978400,
+              "nickName": "KHANNNNNN",
+              "isUsingProfileImage": false,
+              "profileImage": "https://image.otaY.kr/profile/ico/ico_21.png",
+              "isTripHolic": false,
+              "tripHolicTerm": 0,
+              "reviewCount": 12,
+              "reviewImageCount": 25,
+              "reviewProductCount": 12,
+              "isWithdrawn": false
+            }
+          },
+          {
+            "createdAt": "2025-07-29T23:31:46+0900",
+            "updatedAt": "2025-08-02T20:14:39+0900",
+            "reviewId": 27174099,
+            "supplierKey": "GC",
+            "title": null,
+            "rating": 8,
+            "content": "원주 시내 근처여서 어디 이동하기 불편함이 크게 없었어요 숙소도 대체로 깔끔해서 괜찮았어요 원주를 다시 간다면 이용할 의향이 있어요",
+            "contentLanguage": "kor",
+            "likeCount": 1,
+            "isLiked": false,
+            "isBestReview": false,
+            "isRealReview": false,
+            "isImageReview": false,
+            "isEditable": false,
+            "isUserMasked": true,
+            "isHidden": false,
+            "status": "ACTIVE",
+            "images": [],
+            "addition": {
+              "travelerType": null,
+              "spaceGroupName": "[조식 2인 패키지] 디럭스 더블룸"
+            },
+            "comments": [
+              {
+                "createdAt": "2025-07-30T14:14:47+0900",
+                "updatedAt": "2025-07-30T14:14:47+0900",
+                "id": 4294872,
+                "userType": "PARTNER",
+                "userNickName": "제휴점 답변",
+                "content": "부천흑발님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n앞으로도 고객님께서 더욱 편안히 투숙하실 수 있도록 노력하는 호텔이 되겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+              }
+            ],
+            "writtenBy": {
+              "id": 5178069,
+              "nickName": "부*****",
+              "isUsingProfileImage": false,
+              "profileImage": "https://image.withstatic.com/185/473/434/8a8a4bfa5a3b4a6e957b62af9e7bedfe.png",
+              "isTripHolic": false,
+              "tripHolicTerm": 0,
+              "reviewCount": 0,
+              "reviewImageCount": 0,
+              "reviewProductCount": 0,
+              "isWithdrawn": false
+            }
+          }
+        ],
+        "hasNext": true
+      },
+      "channelingCode": null,
+      "channelingPlaceID": null,
+      "dehydratedState": {
+        "mutations": [],
+        "queries": [
+          {
+            "state": {
+              "data": {
+                "timestamp": 1755064823756,
+                "body": {
+                  "meta": {
+                    "id": 6849,
+                    "name": "호텔 인터불고 원주",
+                    "grade": "4성급",
+                    "gradeCode": "STAR4",
+                    "thumbnail": null,
+                    "review": {
+                      "rate": 8.8,
+                      "count": 207
+                    },
+                    "badges": [],
+                    "category": 2,
+                    "images": [
+                      {
+                        "title": "외관",
+                        "image": "http://image.otaY.kr/affiliate/2025/05/15/68257319ac0cf.png"
+                      },
+                      {
+                        "title": "전경",
+                        "image": "http://image.otaY.kr/affiliate/2025/05/15/6825733f40e56.png"
+                      },
+                      {
+                        "title": "스탠다드 더블룸",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9a84c2be.jpg"
+                      },
+                      {
+                        "title": "스탠다드 더블룸",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9adeece7.jpg"
+                      },
+                      {
+                        "title": "스탠다드 트윈룸",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9beb36de.jpg"
+                      },
+                      {
+                        "title": "스탠다드 패밀리 트윈룸",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9d01ce70.jpg"
+                      },
+                      {
+                        "title": "디럭스 더블룸",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9e6caf85.jpg"
+                      },
+                      {
+                        "title": "디럭스 트윈룸",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9f6a9e6b.jpg"
+                      },
+                      {
+                        "title": "디럭스 패밀리 트윈룸",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa0914295.jpg"
+                      },
+                      {
+                        "title": "IB스위트",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1b8a5a4.jpg"
+                      },
+                      {
+                        "title": "IB스위트",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1bed3ef.jpg"
+                      },
+                      {
+                        "title": "로열스위트",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa467de0e.jpg"
+                      },
+                      {
+                        "title": "로열스위트",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa6064461.jpg"
+                      },
+                      {
+                        "title": "로열스위트",
+                        "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa6287f3b.jpg"
+                      },
+                      {
+                        "title": "키즈룸A",
+                        "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec39fdc27e.jpg"
+                      },
+                      {
+                        "title": "파티룸B",
+                        "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec3a44f417.jpg"
+                      },
+                      {
+                        "title": "펫룸",
+                        "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec3a9b984e.jpg"
+                      },
+                      {
+                        "title": "피트니스 센터",
+                        "image": "http://image.otaY.kr/affiliate/2025/05/15/682571b7bd5eb.png"
+                      },
+                      {
+                        "title": "수영장",
+                        "image": "http://image.otaY.kr/affiliate/2025/05/15/682571bcd5cbd.png"
+                      },
+                      {
+                        "title": "골프장",
+                        "image": "http://image.otaY.kr/affiliate/2025/05/15/682571c38024d.png"
+                      }
+                    ],
+                    "newImages": [
+                      {
+                        "title": "외관",
+                        "image": "https://image.withstatic.com/153/467/149/e83122ded4614083893db2ec6cfef5e2.png"
+                      },
+                      {
+                        "title": "전경",
+                        "image": "https://image.withstatic.com/191/2/166/fbe7dc37c3df47668a0a49f3c376faf0.png"
+                      },
+                      {
+                        "title": "스탠다드 더블룸",
+                        "image": "https://image.withstatic.com/222/453/246/9f701d822e6e4a61bfd72eb6e5afd027.jpg"
+                      },
+                      {
+                        "title": "스탠다드 더블룸",
+                        "image": "https://image.withstatic.com/456/353/77/9dcce4bde8144315a6a16a8f77891f4c.jpg"
+                      },
+                      {
+                        "title": "스탠다드 트윈룸",
+                        "image": "https://image.withstatic.com/281/152/53/e30558a950bc43789bf0fe15d37ab6ce.jpg"
+                      },
+                      {
+                        "title": "스탠다드 패밀리 트윈룸",
+                        "image": "https://image.withstatic.com/6/469/415/f1356baf918841cea2d2d09823a31da8.jpg"
+                      },
+                      {
+                        "title": "디럭스 더블룸",
+                        "image": "https://image.withstatic.com/334/268/15/d50738e2fccf406480d85b7c90132744.jpg"
+                      },
+                      {
+                        "title": "디럭스 트윈룸",
+                        "image": "https://image.withstatic.com/116/301/153/7991289de6e34a958c0a0245261a657d.jpg"
+                      },
+                      {
+                        "title": "디럭스 패밀리 트윈룸",
+                        "image": "https://image.withstatic.com/409/165/186/5e4de3ca9c2745d18918f62b27df232e.jpg"
+                      },
+                      {
+                        "title": "IB스위트",
+                        "image": "https://image.withstatic.com/92/84/442/e160bab4902b49d4a6fcbd6f9cb6235b.jpg"
+                      },
+                      {
+                        "title": "IB스위트",
+                        "image": "https://image.withstatic.com/193/354/212/fa1590013e1f48c684eee6e3b0a48d30.jpg"
+                      },
+                      {
+                        "title": "로열스위트",
+                        "image": "https://image.withstatic.com/139/456/161/d0c7c5d713574dc4b2fea6fb3d5e67bb.jpg"
+                      },
+                      {
+                        "title": "로열스위트",
+                        "image": "https://image.withstatic.com/153/6/242/e0e3524a539b48eb86815ba9c702b139.jpg"
+                      },
+                      {
+                        "title": "로열스위트",
+                        "image": "https://image.withstatic.com/453/266/296/9bdc37e995054c4f90baf9fcd098b658.jpg"
+                      },
+                      {
+                        "title": "키즈룸A",
+                        "image": "https://image.withstatic.com/327/113/320/b885f3239b08482e9b223c750884a7c7.jpg"
+                      },
+                      {
+                        "title": "파티룸B",
+                        "image": "https://image.withstatic.com/409/262/341/0214c72e6a5347d28fe97ae4fa8ee212.jpg"
+                      },
+                      {
+                        "title": "펫룸",
+                        "image": "https://image.withstatic.com/146/301/112/8ee8f4520fe448cebd53c13c8a00cfcc.jpg"
+                      },
+                      {
+                        "title": "피트니스 센터",
+                        "image": "https://image.withstatic.com/88/148/429/8e414018ffbd4ac0918c95cda15ef52f.png"
+                      },
+                      {
+                        "title": "수영장",
+                        "image": "https://image.withstatic.com/301/364/441/de633b2e17f645b8af90f6de7b91d48c.png"
+                      },
+                      {
+                        "title": "골프장",
+                        "image": "https://image.withstatic.com/53/14/202/f54ac7a54c4b4642829711e6caef8449.png"
+                      }
+                    ],
+                    "address": "강원 원주시 반곡동 1809-1",
+                    "tel": "033-769-8114",
+                    "location": {
+                      "thumbnail": "http://image.otaY.kr/static_maps_by_naver/6849_37.33244183181508_127.9742530301693_640x320_2_14_ko.png",
+                      "latitude": 37.33244183181508,
+                      "longitude": 127.9742530301693
+                    },
+                    "additional": [],
+                    "specialDay": null,
+                    "keywords": [],
+                    "black": false,
+                    "btype": false
+                  },
+                  "paymentBenefits": {
+                    "title": "결제 혜택",
+                    "benefits": [
+                      {
+                        "id": "TOSS",
+                        "name": "토스페이",
+                        "icon": "https://image.otaY.kr/images/png/pdp/payment/img_payment_tosspay.png",
+                        "contents": [
+                          "3만원 이상, 10% <b>최대 1만원 할인</b>(오전10시, 일 1,000명)",
+                          "2만원 이상, <b>2천원 할인 </b>(오후 4시, 일 2,000명)",
+                          "토스페이로 10만원 이상 첫결제 시, 3천원 할인(오전 10시,일 250명)"
+                        ]
+                      },
+                      {
+                        "id": "KAKAO",
+                        "name": "카카오페이",
+                        "icon": "https://image.otaY.kr/images/png/pdp/payment/img_payment_kakao.png",
+                        "contents": [
+                          "페이머니로 결제시, <b>최대 1만원 할인</b>",
+                          "호텔/펜션 - 7만원 이상, <b>10% 할인</b> (오전0시, 일 750명)",
+                          "모텔 - 2만원 이상 ,&nbsp; <b>2천원 할인</b> (오전0시, 일 1,600명)"
+                        ]
+                      },
+                      {
+                        "id": "QUICK_TRANSFER",
+                        "name": "퀵계좌이체",
+                        "icon": null,
+                        "contents": [
+                          "퀵계좌이체 결제 시, <b>누구나 0.5% 할인</b>",
+                          "생애첫결제 시, 7만원 이상, <b>5천원 할인</b> (매일 9시)"
+                        ]
+                      },
+                      {
+                        "id": "CARD",
+                        "name": "신용/체크카드",
+                        "icon": null,
+                        "contents": [
+                          "<span style=\"white-space-collapse: collapse;\">국내숙소 - 7만원 이상, </span><b style=\"white-space-collapse: collapse;\">5천원 할인&nbsp;</b>",
+                          "오전 0시 우리카드 (일 65명)"
+                        ]
+                      },
+                      {
+                        "id": "CARD",
+                        "name": "신용/체크카드",
+                        "icon": null,
+                        "contents": [
+                          "<span style=\"color: rgba(0, 0, 0, 0.87); font-size: 12px; text-align: center; white-space-collapse: collapse;\">국내숙소 - 현대카드 M포인트 10% 사용 (</span><span style=\"font-weight: bolder; white-space-collapse: collapse; color: rgba(0, 0, 0, 0.87); font-size: 12px; text-align: center;\">최대 5,000P)</span>"
+                        ]
+                      }
+                    ],
+                    "count": 5
+                  },
+                  "manager": {
+                    "comment": "스페인어로 '모두의 마음과 뜻을 함께하는 화목한 마을' 이란 뜻을 담고 있는 인터불고는 자연마저 쉬어가는 원주 유일의 4성급 호텔 입니다\n객실 뿐 아니라 골프장, 레스토랑, 웨딩홀, 연회장 등을 갖추고 있어 품격 높은 서비스를 제공합니다"
+                  },
+                  "benefit": null,
+                  "details": [
+                    {
+                      "title": "공지사항",
+                      "contents": [
+                        "<b>[일회용품 제공 제한 안내]</b>",
+                        "환경부의 숙박업소 일회용품 사용에 관한 규제에 따라 일회용품 제공이 제한됩니다",
+                        "다회용 비치 용품 : 샴푸, 컨디셔너, 바디워시, 핸드워시, 바디로션",
+                        "<b>[펫 놀이터 운영 중단 안내]</b>",
+                        "기간: 2025년 4월 16일~추후 공지 예정",
+                        "내부 공사로 인해 펫 놀이터 사용이 불가합니다",
+                        "고객님의 만족도를 높이기 위하여 다시 새로운 모습으로 찾아 뵙겠습니다",
+                        "고객 여러분의 많은 양해 부탁드립니다"
+                      ]
+                    },
+                    {
+                      "title": "기본정보",
+                      "contents": [
+                        "체크인 : 15:00 | 체크아웃 : 11:00",
+                        "무료 Wi-Fi",
+                        "전 객실 금연",
+                        "Bath Amenity (치약, 칫솔 유료)",
+                        "주차 무료 (객실당 1대)"
+                      ]
+                    },
+                    {
+                      "title": "인원 추가 정보",
+                      "contents": [
+                        "전 객실 인원 추가 불가 / 단, 키즈룸A, 키즈룸B 객실: 최대 투숙 가능 인원: 성인 2인+초등학생 이하 아동 2인 (성인 3명 이상 입실 불가)",
+                        "엑스트라베드 및 침구 추가 불가",
+                        "영유아 인원수 포함 / 최대인원 초과 불가",
+                        "상세 이용 호텔 프론트 문의"
+                      ]
+                    },
+                    {
+                      "title": "투숙객 혜택",
+                      "contents": [
+                        "짐 보관 가능"
+                      ]
+                    },
+                    {
+                      "title": "부대시설 정보",
+                      "contents": [
+                        "레스토랑, 카페, Bar, 피트니스 센터, 사우나, 골프장, 연회장, 여행사, 플라워샵",
+                        "수영장 / 신장 120cm 이하, 실내수영복 및 수영모 미착용 시 입장 제한"
+                      ]
+                    },
+                    {
+                      "title": "애견 입실안내",
+                      "contents": [
+                        "<b>펫룸, 펫 스위트 객실만 반려견 입실이 가능하며, 호텔로 사전 문의는 필수입니다</b>",
+                        "객실당 반려동물 1마리 동반 입실이 가능합니다",
+                        "반려견의 체중은 10kg 이하여야 합니다 (단, 시각장애인 안내견의 경우는 제한이 없습니다)",
+                        "동물보호법에서 정의하고 있는 맹견에 해당하는 견종은 입장이 제한됩니다",
+                        "엘리베이터 및 호텔 내 이동 시에는 애견 이동가방 또는 유모차를 이용해야 합니다 (유모차 대여 가능)",
+                        "호텔 외부에서 이동 시에는 반드시 리드줄을 착용해 주시기 바라며, 호텔 및 객실 출입문 주변에 리드줄이 끼지 않도록 주의해 주시기 바랍니다",
+                        "패키지 혜택으로 제공되는 어메니티 및 서비스는 투숙당 1회 제공됩니다",
+                        "반려견을 호텔 내에 홀로 두어서는 안되며 소음 등으로 인해 피해가 발생할 경우 입장 제한 및 퇴실 요청이 있을 수 있습니다",
+                        "호텔은 반려견과 투숙으로 인한 기물파손, 오염으로 인한 청소 및 보수에 대해 퇴실 이후 손해배상을 청구할 수 있습니다",
+                        "입질, 심한 짖음, 심한 공격성, 마운팅이 있는 애견은 입장 제한 및 퇴실 요청이 있을 수 있습니다",
+                        "공공질서와 모두의 편안한 투숙을 위하여 반려견의 모든 행동을 유의해 주시기 바랍니다",
+                        "고객의 부주의로 인한 사고 및 반려견 분실의 경우 당 호텔에서는 책임을 지지 않습니다"
+                      ]
+                    },
+                    {
+                      "title": "조식 정보",
+                      "contents": [
+                        "델리시오소 / 1층 / 06:30~10:00",
+                        "정상가: 1인 38,000원(중학생~성인), 25,000원(초등학생), 20,000원(만 3세~미취학)",
+                        "현장결제"
+                      ]
+                    },
+                    {
+                      "title": "취소 및 환불 규정",
+                      "contents": [
+                        "체크인일 기준 2일 전 : 100% 환불",
+                        "체크인일 기준 1일 전~당일 및 No-Show : 환불불가",
+                        "취소, 환불시 수수료가 발생할 수 있습니다"
+                      ]
+                    },
+                    {
+                      "title": "확인사항 및 기타",
+                      "contents": [
+                        "최대인원 초과시 입실 불가합니다",
+                        "위의 정보는 호텔의 사정에 따라 변경될 수 있습니다",
+                        "해당 이미지는 실제와 상이 할 수 있습니다",
+                        "체크인 시 배정 또는 베드타입 미기재 상품은 특정객실과 베드타입을 보장하지 않습니다",
+                        "해당 객실가는 세금, 봉사료가 포함된 금액입니다",
+                        "미성년자는 보호자 동반없이 이용하실 수 없습니다"
+                      ]
+                    }
+                  ],
+                  "traffic": {
+                    "title": "주변정보",
+                    "contents": [
+                      "원주역 차량 17분",
+                      "원주역사박물관 차량 5분",
+                      "치악민속박물관 차량 9분"
+                    ]
+                  },
+                  "emblems": [],
+                  "event": null,
+                  "rooms": [
+                    {
+                      "type": "NON_MOTEL",
+                      "id": 556381,
+                      "name": "스탠다드 더블룸",
+                      "images": [
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9adeece7.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9a84c2be.jpg"
+                        }
+                      ],
+                      "newImages": [
+                        {
+                          "image": "https://image.withstatic.com/323/392/193/c270f9835c3242ad866f612544e92f64.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/14/141/185/fc02b84641f741c58b9bf3c6315e5b18.jpg"
+                        }
+                      ],
+                      "rent": null,
+                      "stay": {
+                        "id": 556381,
+                        "name": "스탠다드 더블룸",
+                        "title": null,
+                        "label": {
+                          "option": null,
+                          "checkInOut": "입실 15:00·퇴실 11:00",
+                          "checkInTime": "15:00",
+                          "checkOutTime": "11:00",
+                          "closeTime": null,
+                          "people": null,
+                          "remain": null,
+                          "cancel": "무료취소 - 8월 14일 23:59까지",
+                          "cancelType": "FREE",
+                          "serviceFee": null,
+                          "discounts": []
+                        },
+                        "price": {
+                          "salePrice": 190000,
+                          "strikePrice": null,
+                          "discountPrice": 190000,
+                          "totalPrice": 190000,
+                          "discountTotalPrice": 190000,
+                          "discountRate": null,
+                          "continuousText": null,
+                          "totalWithoutCouponDiscountPrice": null
+                        },
+                        "badges": [],
+                        "coupon": null,
+                        "addCoupon": null,
+                        "stockCount": 13,
+                        "additional": null,
+                        "rewardPoint": null
+                      },
+                      "promotions": [
+                        {
+                          "title": "객실정보",
+                          "content": {
+                            "text": "기준2인 · 최대2인",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        }
+                      ],
+                      "badges": [],
+                      "additional": {
+                        "basePersonalCount": 2,
+                        "maxPersonalCount": 2,
+                        "isPersonalCharging": false,
+                        "isEarlyCheckIn": false,
+                        "isWalkOnly": false,
+                        "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+                        "guesthouseRoomTypeName": "개인실",
+                        "packageText": null,
+                        "extendText": null,
+                        "guesthouseIntroduction": null,
+                        "confirmationType": 0,
+                        "isDayUse": false,
+                        "isHardBlock": false,
+                        "supplier": "SANHA",
+                        "status": "OPEN",
+                        "isCancelableInApp": true,
+                        "isCancelable": false
+                      },
+                      "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9adeece7.jpg"
+                    },
+                    {
+                      "type": "NON_MOTEL",
+                      "id": 556383,
+                      "name": "스탠다드 트윈룸",
+                      "images": [
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9beb36de.jpg"
+                        }
+                      ],
+                      "newImages": [
+                        {
+                          "image": "https://image.withstatic.com/9/65/11/f915f8813bf84ecea1f9bf6483932829.jpg"
+                        }
+                      ],
+                      "rent": null,
+                      "stay": {
+                        "id": 556383,
+                        "name": "스탠다드 트윈룸",
+                        "title": null,
+                        "label": {
+                          "option": null,
+                          "checkInOut": "입실 15:00·퇴실 11:00",
+                          "checkInTime": "15:00",
+                          "checkOutTime": "11:00",
+                          "closeTime": null,
+                          "people": null,
+                          "remain": null,
+                          "cancel": "무료취소 - 8월 14일 23:59까지",
+                          "cancelType": "FREE",
+                          "serviceFee": null,
+                          "discounts": []
+                        },
+                        "price": {
+                          "salePrice": 200000,
+                          "strikePrice": null,
+                          "discountPrice": 200000,
+                          "totalPrice": 200000,
+                          "discountTotalPrice": 200000,
+                          "discountRate": null,
+                          "continuousText": null,
+                          "totalWithoutCouponDiscountPrice": null
+                        },
+                        "badges": [],
+                        "coupon": null,
+                        "addCoupon": null,
+                        "stockCount": 32,
+                        "additional": null,
+                        "rewardPoint": null
+                      },
+                      "promotions": [
+                        {
+                          "title": "객실정보",
+                          "content": {
+                            "text": "기준3인 · 최대3인",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        }
+                      ],
+                      "badges": [],
+                      "additional": {
+                        "basePersonalCount": 3,
+                        "maxPersonalCount": 3,
+                        "isPersonalCharging": false,
+                        "isEarlyCheckIn": false,
+                        "isWalkOnly": false,
+                        "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+                        "guesthouseRoomTypeName": "개인실",
+                        "packageText": null,
+                        "extendText": null,
+                        "guesthouseIntroduction": null,
+                        "confirmationType": 0,
+                        "isDayUse": false,
+                        "isHardBlock": false,
+                        "supplier": "SANHA",
+                        "status": "OPEN",
+                        "isCancelableInApp": true,
+                        "isCancelable": false
+                      },
+                      "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9beb36de.jpg"
+                    },
+                    {
+                      "type": "NON_MOTEL",
+                      "id": 556387,
+                      "name": "디럭스 더블룸",
+                      "images": [
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9e6caf85.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9e80f547.jpg"
+                        }
+                      ],
+                      "newImages": [
+                        {
+                          "image": "https://image.withstatic.com/188/473/12/11f375b878484751a1009c7d00046016.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/156/166/101/484abe6826e9494b8e1a67a70f8102c3.jpg"
+                        }
+                      ],
+                      "rent": null,
+                      "stay": {
+                        "id": 556387,
+                        "name": "디럭스 더블룸",
+                        "title": null,
+                        "label": {
+                          "option": null,
+                          "checkInOut": "입실 15:00·퇴실 11:00",
+                          "checkInTime": "15:00",
+                          "checkOutTime": "11:00",
+                          "closeTime": null,
+                          "people": null,
+                          "remain": null,
+                          "cancel": "무료취소 - 8월 14일 23:59까지",
+                          "cancelType": "FREE",
+                          "serviceFee": null,
+                          "discounts": []
+                        },
+                        "price": {
+                          "salePrice": 200000,
+                          "strikePrice": null,
+                          "discountPrice": 200000,
+                          "totalPrice": 200000,
+                          "discountTotalPrice": 200000,
+                          "discountRate": null,
+                          "continuousText": null,
+                          "totalWithoutCouponDiscountPrice": null
+                        },
+                        "badges": [],
+                        "coupon": null,
+                        "addCoupon": null,
+                        "stockCount": 10,
+                        "additional": null,
+                        "rewardPoint": null
+                      },
+                      "promotions": [
+                        {
+                          "title": "객실정보",
+                          "content": {
+                            "text": "기준2인 · 최대2인",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        }
+                      ],
+                      "badges": [],
+                      "additional": {
+                        "basePersonalCount": 2,
+                        "maxPersonalCount": 2,
+                        "isPersonalCharging": false,
+                        "isEarlyCheckIn": false,
+                        "isWalkOnly": false,
+                        "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+                        "guesthouseRoomTypeName": "개인실",
+                        "packageText": null,
+                        "extendText": null,
+                        "guesthouseIntroduction": null,
+                        "confirmationType": 0,
+                        "isDayUse": false,
+                        "isHardBlock": false,
+                        "supplier": "SANHA",
+                        "status": "OPEN",
+                        "isCancelableInApp": true,
+                        "isCancelable": false
+                      },
+                      "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9e6caf85.jpg"
+                    },
+                    {
+                      "type": "NON_MOTEL",
+                      "id": 556386,
+                      "name": "스탠다드 온돌",
+                      "images": [
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec380a21e9.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec381a387a.jpg"
+                        }
+                      ],
+                      "newImages": [
+                        {
+                          "image": "https://image.withstatic.com/340/433/38/4d91caedec474041a364c519f14f78e4.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/185/358/401/a498f21ad04e43ebbbf12bbd41f9c44f.jpg"
+                        }
+                      ],
+                      "rent": null,
+                      "stay": {
+                        "id": 556386,
+                        "name": "스탠다드 온돌",
+                        "title": null,
+                        "label": {
+                          "option": null,
+                          "checkInOut": "입실 15:00·퇴실 11:00",
+                          "checkInTime": "15:00",
+                          "checkOutTime": "11:00",
+                          "closeTime": null,
+                          "people": null,
+                          "remain": "이 가격으로 남은 객실 1개",
+                          "cancel": "무료취소 - 8월 14일 23:59까지",
+                          "cancelType": "FREE",
+                          "serviceFee": null,
+                          "discounts": []
+                        },
+                        "price": {
+                          "salePrice": 210000,
+                          "strikePrice": null,
+                          "discountPrice": 210000,
+                          "totalPrice": 210000,
+                          "discountTotalPrice": 210000,
+                          "discountRate": null,
+                          "continuousText": null,
+                          "totalWithoutCouponDiscountPrice": null
+                        },
+                        "badges": [],
+                        "coupon": null,
+                        "addCoupon": null,
+                        "stockCount": 1,
+                        "additional": null,
+                        "rewardPoint": null
+                      },
+                      "promotions": [
+                        {
+                          "title": "객실정보",
+                          "content": {
+                            "text": "기준3인 · 최대3인",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        },
+                        {
+                          "title": "추가정보",
+                          "content": {
+                            "text": "하반기 계절 난방 작동 불가 (매년 10월 말까지)",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        }
+                      ],
+                      "badges": [],
+                      "additional": {
+                        "basePersonalCount": 3,
+                        "maxPersonalCount": 3,
+                        "isPersonalCharging": false,
+                        "isEarlyCheckIn": false,
+                        "isWalkOnly": false,
+                        "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+                        "guesthouseRoomTypeName": "개인실",
+                        "packageText": null,
+                        "extendText": "하반기 계절 난방 작동 불가 (매년 10월 말까지)",
+                        "guesthouseIntroduction": null,
+                        "confirmationType": 0,
+                        "isDayUse": false,
+                        "isHardBlock": false,
+                        "supplier": "SANHA",
+                        "status": "OPEN",
+                        "isCancelableInApp": true,
+                        "isCancelable": false
+                      },
+                      "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec380a21e9.jpg"
+                    },
+                    {
+                      "type": "NON_MOTEL",
+                      "id": 556388,
+                      "name": "디럭스 트윈룸",
+                      "images": [
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9f6a9e6b.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9f7bd417.jpg"
+                        }
+                      ],
+                      "newImages": [
+                        {
+                          "image": "https://image.withstatic.com/81/49/92/1943531123764ae19ba5792aac9d8487.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/207/278/445/a524ae478b114e7ba5a63619152a565f.jpg"
+                        }
+                      ],
+                      "rent": null,
+                      "stay": {
+                        "id": 556388,
+                        "name": "디럭스 트윈룸",
+                        "title": null,
+                        "label": {
+                          "option": null,
+                          "checkInOut": "입실 15:00·퇴실 11:00",
+                          "checkInTime": "15:00",
+                          "checkOutTime": "11:00",
+                          "closeTime": null,
+                          "people": null,
+                          "remain": null,
+                          "cancel": "무료취소 - 8월 14일 23:59까지",
+                          "cancelType": "FREE",
+                          "serviceFee": null,
+                          "discounts": []
+                        },
+                        "price": {
+                          "salePrice": 210000,
+                          "strikePrice": null,
+                          "discountPrice": 210000,
+                          "totalPrice": 210000,
+                          "discountTotalPrice": 210000,
+                          "discountRate": null,
+                          "continuousText": null,
+                          "totalWithoutCouponDiscountPrice": null
+                        },
+                        "badges": [],
+                        "coupon": null,
+                        "addCoupon": null,
+                        "stockCount": 26,
+                        "additional": null,
+                        "rewardPoint": null
+                      },
+                      "promotions": [
+                        {
+                          "title": "객실정보",
+                          "content": {
+                            "text": "기준3인 · 최대3인",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        }
+                      ],
+                      "badges": [],
+                      "additional": {
+                        "basePersonalCount": 3,
+                        "maxPersonalCount": 3,
+                        "isPersonalCharging": false,
+                        "isEarlyCheckIn": false,
+                        "isWalkOnly": false,
+                        "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+                        "guesthouseRoomTypeName": "개인실",
+                        "packageText": null,
+                        "extendText": null,
+                        "guesthouseIntroduction": null,
+                        "confirmationType": 0,
+                        "isDayUse": false,
+                        "isHardBlock": false,
+                        "supplier": "SANHA",
+                        "status": "OPEN",
+                        "isCancelableInApp": true,
+                        "isCancelable": false
+                      },
+                      "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2f9f6a9e6b.jpg"
+                    },
+                    {
+                      "type": "NON_MOTEL",
+                      "id": 556391,
+                      "name": "펫룸",
+                      "images": [
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec366b59d4.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec367c905b.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec365c3c9a.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2025/02/20/67b6790f8880f.jpg"
+                        }
+                      ],
+                      "newImages": [
+                        {
+                          "image": "https://image.withstatic.com/53/393/476/bf120cd9fd774799acc2300508ad9057.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/184/438/153/e6a7f2042bf340b6ad1186906d35391c.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/174/73/79/d6914a9b5a6d4f6eb689ccde868ce1ae.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/261/18/306/d2099c45228b4d569d1f556ece36ac64.jpg"
+                        }
+                      ],
+                      "rent": null,
+                      "stay": {
+                        "id": 556391,
+                        "name": "펫룸",
+                        "title": null,
+                        "label": {
+                          "option": null,
+                          "checkInOut": "입실 15:00·퇴실 11:00",
+                          "checkInTime": "15:00",
+                          "checkOutTime": "11:00",
+                          "closeTime": null,
+                          "people": null,
+                          "remain": "이 가격으로 남은 객실 2개",
+                          "cancel": "무료취소 - 8월 14일 23:59까지",
+                          "cancelType": "FREE",
+                          "serviceFee": null,
+                          "discounts": []
+                        },
+                        "price": {
+                          "salePrice": 220000,
+                          "strikePrice": null,
+                          "discountPrice": 220000,
+                          "totalPrice": 220000,
+                          "discountTotalPrice": 220000,
+                          "discountRate": null,
+                          "continuousText": null,
+                          "totalWithoutCouponDiscountPrice": null
+                        },
+                        "badges": [],
+                        "coupon": null,
+                        "addCoupon": null,
+                        "stockCount": 2,
+                        "additional": null,
+                        "rewardPoint": null
+                      },
+                      "promotions": [
+                        {
+                          "title": "객실정보",
+                          "content": {
+                            "text": "기준2인 · 최대2인",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        },
+                        {
+                          "title": "추가정보",
+                          "content": {
+                            "text": "반려동물 1마리 동반 입실 가능(호텔 문의 필수)/반려견 체중 10kg 이하 필수(시각장애인 안내견 제한없음)",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        }
+                      ],
+                      "badges": [],
+                      "additional": {
+                        "basePersonalCount": 2,
+                        "maxPersonalCount": 2,
+                        "isPersonalCharging": false,
+                        "isEarlyCheckIn": false,
+                        "isWalkOnly": false,
+                        "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+                        "guesthouseRoomTypeName": "개인실",
+                        "packageText": null,
+                        "extendText": "반려동물 1마리 동반 입실 가능(호텔 문의 필수)/반려견 체중 10kg 이하 필수(시각장애인 안내견 제한없음)",
+                        "guesthouseIntroduction": null,
+                        "confirmationType": 0,
+                        "isDayUse": false,
+                        "isHardBlock": false,
+                        "supplier": "SANHA",
+                        "status": "OPEN",
+                        "isCancelableInApp": true,
+                        "isCancelable": false
+                      },
+                      "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec366b59d4.jpg"
+                    },
+                    {
+                      "type": "NON_MOTEL",
+                      "id": 556390,
+                      "name": "IB스위트",
+                      "images": [
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1b8a5a4.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1dbd8c8.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1ca477f.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1bed3ef.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa2e8c29e.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa28e5702.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa2a13d8b.jpg"
+                        }
+                      ],
+                      "newImages": [
+                        {
+                          "image": "https://image.withstatic.com/180/244/192/ff870add90df40d4b6cd80e675905ab0.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/171/492/371/4844f98c3dfd40cdb2800533d80c8b54.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/472/248/299/f6d1f9a8fb564910a30297ab0cd7a42e.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/374/385/38/0743f7e2e5494feaa3f1be615342938e.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/173/227/288/37b7c75a3c7945279ebe72a52dd0898b.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/46/467/23/2f51974b800c4d7c82166a81049798a5.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/357/436/289/40f67c51b7454764bb075ea1a2c55a08.jpg"
+                        }
+                      ],
+                      "rent": null,
+                      "stay": {
+                        "id": 556390,
+                        "name": "IB스위트",
+                        "title": null,
+                        "label": {
+                          "option": null,
+                          "checkInOut": "입실 15:00·퇴실 11:00",
+                          "checkInTime": "15:00",
+                          "checkOutTime": "11:00",
+                          "closeTime": null,
+                          "people": null,
+                          "remain": "이 가격으로 남은 객실 2개",
+                          "cancel": "무료취소 - 8월 14일 23:59까지",
+                          "cancelType": "FREE",
+                          "serviceFee": null,
+                          "discounts": []
+                        },
+                        "price": {
+                          "salePrice": 310000,
+                          "strikePrice": null,
+                          "discountPrice": 310000,
+                          "totalPrice": 310000,
+                          "discountTotalPrice": 310000,
+                          "discountRate": null,
+                          "continuousText": null,
+                          "totalWithoutCouponDiscountPrice": null
+                        },
+                        "badges": [],
+                        "coupon": null,
+                        "addCoupon": null,
+                        "stockCount": 2,
+                        "additional": null,
+                        "rewardPoint": null
+                      },
+                      "promotions": [
+                        {
+                          "title": "객실정보",
+                          "content": {
+                            "text": "기준3인 · 최대3인",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        }
+                      ],
+                      "badges": [],
+                      "additional": {
+                        "basePersonalCount": 3,
+                        "maxPersonalCount": 3,
+                        "isPersonalCharging": false,
+                        "isEarlyCheckIn": false,
+                        "isWalkOnly": false,
+                        "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+                        "guesthouseRoomTypeName": "개인실",
+                        "packageText": null,
+                        "extendText": null,
+                        "guesthouseIntroduction": null,
+                        "confirmationType": 0,
+                        "isDayUse": false,
+                        "isHardBlock": false,
+                        "supplier": "SANHA",
+                        "status": "OPEN",
+                        "isCancelableInApp": true,
+                        "isCancelable": false
+                      },
+                      "image": "http://image.otaY.kr/affiliate/2022/08/10/62f2fa1b8a5a4.jpg"
+                    },
+                    {
+                      "type": "NON_MOTEL",
+                      "id": 556398,
+                      "name": "파티룸C",
+                      "images": [
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec355b5dbc.jpg"
+                        },
+                        {
+                          "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec356b34b0.jpg"
+                        }
+                      ],
+                      "newImages": [
+                        {
+                          "image": "https://image.withstatic.com/390/72/424/f57edd6234c54e08bf7cd1a03280be5f.jpg"
+                        },
+                        {
+                          "image": "https://image.withstatic.com/98/413/286/b72bd68fedcc40be875d8445fb3f3177.jpg"
+                        }
+                      ],
+                      "rent": null,
+                      "stay": {
+                        "id": 556398,
+                        "name": "파티룸C",
+                        "title": null,
+                        "label": {
+                          "option": null,
+                          "checkInOut": "입실 15:00·퇴실 11:00",
+                          "checkInTime": "15:00",
+                          "checkOutTime": "11:00",
+                          "closeTime": null,
+                          "people": null,
+                          "remain": "이 가격으로 남은 객실 1개",
+                          "cancel": "무료취소 - 8월 14일 23:59까지",
+                          "cancelType": "FREE",
+                          "serviceFee": null,
+                          "discounts": []
+                        },
+                        "price": {
+                          "salePrice": 410000,
+                          "strikePrice": null,
+                          "discountPrice": 410000,
+                          "totalPrice": 410000,
+                          "discountTotalPrice": 410000,
+                          "discountRate": null,
+                          "continuousText": null,
+                          "totalWithoutCouponDiscountPrice": null
+                        },
+                        "badges": [],
+                        "coupon": null,
+                        "addCoupon": null,
+                        "stockCount": 1,
+                        "additional": null,
+                        "rewardPoint": null
+                      },
+                      "promotions": [
+                        {
+                          "title": "객실정보",
+                          "content": {
+                            "text": "기준6인 · 최대6인",
+                            "badges": null,
+                            "type": "TEXT"
+                          }
+                        }
+                      ],
+                      "badges": [],
+                      "additional": {
+                        "basePersonalCount": 6,
+                        "maxPersonalCount": 6,
+                        "isPersonalCharging": false,
+                        "isEarlyCheckIn": false,
+                        "isWalkOnly": false,
+                        "guesthouseRoomTypeCode": "GUESTHOUSE_ROOM_PRIVATE",
+                        "guesthouseRoomTypeName": "개인실",
+                        "packageText": null,
+                        "extendText": null,
+                        "guesthouseIntroduction": null,
+                        "confirmationType": 0,
+                        "isDayUse": false,
+                        "isHardBlock": false,
+                        "supplier": "SANHA",
+                        "status": "OPEN",
+                        "isCancelableInApp": true,
+                        "isCancelable": false
+                      },
+                      "image": "http://image.otaY.kr/affiliate/2022/12/30/63aec355b5dbc.jpg"
+                    }
+                  ],
+                  "theme": {
+                    "title": "편의시설 및 서비스",
+                    "items": [
+                      {
+                        "id": 41,
+                        "name": "피트니스",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_fitness.svg"
+                      },
+                      {
+                        "id": 54,
+                        "name": "반려견동반",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_pet.svg"
+                      },
+                      {
+                        "id": 42,
+                        "name": "수영장",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_swim.svg"
+                      },
+                      {
+                        "id": 50,
+                        "name": "미니바",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_minibar.svg"
+                      },
+                      {
+                        "id": 44,
+                        "name": "사우나",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_spa.svg"
+                      },
+                      {
+                        "id": 47,
+                        "name": "무선인터넷",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_wifi.svg"
+                      },
+                      {
+                        "id": 45,
+                        "name": "골프장",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_golf.svg"
+                      },
+                      {
+                        "id": 49,
+                        "name": "욕실용품",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_bathroom_supplies.svg"
+                      },
+                      {
+                        "id": 46,
+                        "name": "레스토랑",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_restaurant.svg"
+                      },
+                      {
+                        "id": 134,
+                        "name": "금연",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_no_smoking.svg"
+                      },
+                      {
+                        "id": 197,
+                        "name": "TV",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_tv.svg"
+                      },
+                      {
+                        "id": 198,
+                        "name": "에어컨",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_air_conditioning.svg"
+                      },
+                      {
+                        "id": 199,
+                        "name": "냉장고",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_refrigerator.svg"
+                      },
+                      {
+                        "id": 132,
+                        "name": "짐보관가능",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_baggage.svg"
+                      },
+                      {
+                        "id": 200,
+                        "name": "샤워실",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_shower.svg"
+                      },
+                      {
+                        "id": 201,
+                        "name": "욕조",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_bathtub.svg"
+                      },
+                      {
+                        "id": 136,
+                        "name": "무료주차",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_car.svg"
+                      },
+                      {
+                        "id": 141,
+                        "name": "카페",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_cafe.svg"
+                      },
+                      {
+                        "id": 202,
+                        "name": "드라이기",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_hair_dryer.svg"
+                      },
+                      {
+                        "id": 207,
+                        "name": "카드결제",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_card.svg"
+                      },
+                      {
+                        "id": 356,
+                        "name": "금고",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_strongbox.svg"
+                      },
+                      {
+                        "id": 369,
+                        "name": "전기주전자",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_electric_kettle.svg"
+                      },
+                      {
+                        "id": 195,
+                        "name": "주차장",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_car.svg"
+                      },
+                      {
+                        "id": 336,
+                        "name": "장애인편의",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_bathchair.svg"
+                      },
+                      {
+                        "id": 112,
+                        "name": "엘리베이터",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_elevator.svg"
+                      },
+                      {
+                        "id": 771,
+                        "name": "스프링클러",
+                        "iconImageUrl": "https://image.otaY.kr/images/icon_facilities/v2/icn_facil_sprinkler.svg"
+                      }
+                    ]
+                  },
+                  "black": null,
+                  "braze": {
+                    "areas": [
+                      {
+                        "id": 2008,
+                        "name": "강원",
+                        "subId": 2085,
+                        "subName": "춘천·원주·영월·태백"
+                      }
+                    ],
+                    "subways": []
+                  },
+                  "categoryEventBanners": [
+                    {
+                      "title": "국내여행 오픈런",
+                      "image": "https://image.otaY.kr/exhibition/cms/e4224_dnpqqosj_1200x480_20241215225622_20250115104301.png",
+                      "url": "https://www.otaY.com/event/4457?title=%EA%B5%AD%EB%82%B4%EC%97%AC%ED%96%89+%EC%98%A4%ED%94%88%EB%9F%B0&url=https%3A%2F%2Fapi3.otaY.kr%2Fevent3%2Fweb%2FadEventView%3Faevno%3D4457"
+                    },
+                    {
+                      "title": "막바지 여름 호캉스 할인 중!",
+                      "image": "https://image.otaY.kr/exhibition/cms/Navy_20250807165410.png",
+                      "url": "https://www.otaY.com/special-deal/P20250613145149651"
+                    },
+                    {
+                      "title": "8월 엘리트 특가위크",
+                      "image": "https://image.otaY.kr/exhibition/cms/e5234_ghaqosj_1200x480_20250808135820.png",
+                      "url": "https://www.otaY.com/event/5234?title=8%EC%9B%94+%EC%97%98%EB%A6%AC%ED%8A%B8+%ED%8A%B9%EA%B0%80%EC%9C%84%ED%81%AC&url=https%3A%2F%2Fapi3.otaY.kr%2Fevent3%2Fweb%2FadEventView%3Faevno%3D5234"
+                    },
+                    {
+                      "title": "찐 리얼리뷰 추천 숙소 모음",
+                      "image": "https://image.otaY.kr/exhibition/cms/e5185_WEB_1200x480_1_20250725113147.png",
+                      "url": "https://www.otaY.com/event/5185?title=%EC%B0%90+%EB%A6%AC%EC%96%BC%EB%A6%AC%EB%B7%B0+%EC%B6%94%EC%B2%9C+%EC%88%99%EC%86%8C+%EB%AA%A8%EC%9D%8C&url=https%3A%2F%2Fapi3.otaY.kr%2Fevent3%2Fweb%2FadEventView%3Faevno%3D5185"
+                    },
+                    {
+                      "title": "8월 결제사 모음",
+                      "image": "https://image.otaY.kr/exhibition/cms/e5223_dnpqqosj_1200x480_20250730223101.png",
+                      "url": "https://www.otaY.com/event/5223?title=8%EC%9B%94+%EA%B2%B0%EC%A0%9C%EC%82%AC+%EB%AA%A8%EC%9D%8C&url=https%3A%2F%2Fapi3.otaY.kr%2Fevent3%2Fweb%2FadEventView%3Faevno%3D5223"
+                    }
+                  ],
+                  "motelEvents": [],
+                  "noneMotelEvents": [],
+                  "promotion": null,
+                  "membership": null,
+                  "disposableItemsPolicyNotice": {
+                    "title": "이용 안내",
+                    "subTitle": "일회용품 줄이기 함께 실천해요",
+                    "content": [
+                      "자원재활용법에 따라 2024년 3월 29일부터 일부 숙소에서는 일회용 어메니티가 무료로 제공되지 않아요.",
+                      "일회용 어메니티 별도 구매는 숙소에 문의해주세요."
+                    ]
+                  },
+                  "lowestPrice": {
+                    "lowestPrice": 190000,
+                    "consecutiveText": null,
+                    "rewardPoint": null,
+                    "coupon": null,
+                    "addCoupon": null
+                  },
+                  "isWish": false
+                }
+              },
+              "dataUpdateCount": 1,
+              "dataUpdatedAt": 1755064823759,
+              "error": null,
+              "errorUpdateCount": 0,
+              "errorUpdatedAt": 0,
+              "fetchFailureCount": 0,
+              "fetchMeta": null,
+              "isFetching": false,
+              "isInvalidated": false,
+              "isPaused": false,
+              "status": "success"
+            },
+            "queryKey": [
+              "accommodation",
+              "detail",
+              "domestic",
+              6849,
+              {
+                "checkIn": "2025-08-16",
+                "checkOut": "2025-08-17",
+                "channeling": false
+              }
+            ],
+            "queryHash": "[\"accommodation\",\"detail\",\"domestic\",6849,{\"channeling\":false,\"checkIn\":\"2025-08-16\",\"checkOut\":\"2025-08-17\"}]"
+          },
+          {
+            "state": {
+              "data": {
+                "code": 200,
+                "data": {
+                  "product": {
+                    "id": 6849,
+                    "name": "호텔 인터불고 원주",
+                    "rating": 8.8,
+                    "ratingReviewCount": 207,
+                    "serviceReviewCount": 207,
+                    "imageReviewCount": 46,
+                    "appCategoryId": 2
+                  },
+                  "reviews": [
+                    {
+                      "createdAt": "2025-07-28T10:49:27+0900",
+                      "updatedAt": "2025-08-04T18:01:06+0900",
+                      "reviewId": 27158924,
+                      "supplierKey": "GC",
+                      "title": null,
+                      "rating": 9.3,
+                      "content": "넓은 주차장이 가장 마음에 들고 직원분들이 대체로 친절합니다.\n한켠에 소규모의 편의점이 있어 편리합니다.\n실내 시설물 관리 및 청결 상태도 양호하네요.\n인근에 혁신도시가 있어 먹거리 문제도 비교적 쉽게 해결이 됩니다.\n다음엔 조식도 이용해볼 계획입니다.",
+                      "contentLanguage": "kor",
+                      "likeCount": 1,
+                      "isLiked": false,
+                      "isBestReview": false,
+                      "isRealReview": false,
+                      "isImageReview": false,
+                      "isEditable": false,
+                      "isUserMasked": false,
+                      "isHidden": false,
+                      "status": "ACTIVE",
+                      "images": [],
+                      "addition": {
+                        "travelerType": null,
+                        "spaceGroupName": "스탠다드 패밀리 트윈룸"
+                      },
+                      "comments": [
+                        {
+                          "createdAt": "2025-07-30T14:12:54+0900",
+                          "updatedAt": "2025-07-30T14:12:54+0900",
+                          "id": 4294868,
+                          "userType": "PARTNER",
+                          "userNickName": "제휴점 답변",
+                          "content": "미님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n고객님의 만족과 신뢰에 보답할 수 있도록 최선을 다하는 호텔 인터불고 원주가 되겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+                        }
+                      ],
+                      "writtenBy": {
+                        "id": 8797015,
+                        "nickName": "미래갑부",
+                        "isUsingProfileImage": false,
+                        "profileImage": "https://image.otaY.kr/profile/ico/ico_21.png",
+                        "isTripHolic": false,
+                        "tripHolicTerm": 0,
+                        "reviewCount": 8,
+                        "reviewImageCount": 17,
+                        "reviewProductCount": 8,
+                        "isWithdrawn": false
+                      }
+                    },
+                    {
+                      "createdAt": "2025-01-12T17:36:35+0900",
+                      "updatedAt": "2025-01-12T17:36:35+0900",
+                      "reviewId": 23337113,
+                      "supplierKey": "GC",
+                      "title": null,
+                      "rating": 10,
+                      "content": "체크인15시,체크아웃11시\n주차장은 호텔 옆에 넓게 있습니다\n로비는 아직 연말 분위기가  넘치네요\n3인가족이라 트원룸으로 이용했습니다 \n기본 생수2병 외에는 모~두 유료인 미니바입니다ㅋㅋ\n욕실도 깔끔하고 욕조도있고 샤워공간이 따로 분리되어있어 좋습니다\n바로앞이 소방서뷰인데 옆으로 대형식자재마트가보여서 나가서 간단하게 사와서 저녁을 해결했습니다\n조식시간은 6시30분~10시라고하던데 저희는 이용하지않았습니다\n투숙객은 사전 할인됩니다\n10시쯤 체크아웃하는데 로비가 한산했습니다\nPS:장점:1.다른곳보다 룸이 넓은편인듯 2.주차장이 넓어 걱정없음\n단점:없음\n3인가족 편히 잘 쉬다왔습니다",
+                      "contentLanguage": "kor",
+                      "likeCount": 0,
+                      "isLiked": false,
+                      "isBestReview": false,
+                      "isRealReview": false,
+                      "isImageReview": true,
+                      "isEditable": false,
+                      "isUserMasked": false,
+                      "isHidden": false,
+                      "status": "ACTIVE",
+                      "images": [
+                        {
+                          "id": 4932399,
+                          "url": "https://image.withstatic.com/10/429/17/f831e11b307343419ef247ede379b008.jpg"
+                        },
+                        {
+                          "id": 4932400,
+                          "url": "https://image.withstatic.com/223/242/48/98ba6d3718be4372817d99b3a1cde4a8.jpg"
+                        },
+                        {
+                          "id": 4932401,
+                          "url": "https://image.withstatic.com/349/239/425/9d3af7155b1c4603be6c6e71d741a979.jpg"
+                        },
+                        {
+                          "id": 4932402,
+                          "url": "https://image.withstatic.com/403/217/288/87f2bdbc001a4a05b9a786da63b0464d.jpg"
+                        },
+                        {
+                          "id": 4932403,
+                          "url": "https://image.withstatic.com/18/71/341/37b15cb2662d4417adaddee05c0ee7ef.jpg"
+                        }
+                      ],
+                      "addition": {
+                        "travelerType": null,
+                        "spaceGroupName": "스탠다드 트윈룸"
+                      },
+                      "comments": [
+                        {
+                          "createdAt": "2025-01-16T09:39:15+0900",
+                          "updatedAt": "2025-01-16T09:39:15+0900",
+                          "id": 3896687,
+                          "userType": "PARTNER",
+                          "userNickName": "제휴점 답변",
+                          "content": "까칠한아저씨넘버1님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n고객님의 만족과 신뢰에 보답할 수 있도록 최선을 다하는 호텔 인터불고 원주가 되겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+                        }
+                      ],
+                      "writtenBy": {
+                        "id": 144575,
+                        "nickName": "까칠한아저씨넘버1",
+                        "isUsingProfileImage": true,
+                        "profileImage": "https://image.withstatic.com/112/387/473/f7ac7104ee1849fcafe9321262d120e3.jpg",
+                        "isTripHolic": true,
+                        "tripHolicTerm": 25,
+                        "reviewCount": 248,
+                        "reviewImageCount": 829,
+                        "reviewProductCount": 119,
+                        "isWithdrawn": false
+                      }
+                    },
+                    {
+                      "createdAt": "2024-11-24T21:27:10+0900",
+                      "updatedAt": "2024-11-24T21:27:10+0900",
+                      "reviewId": 22243308,
+                      "supplierKey": "GC",
+                      "title": null,
+                      "rating": 10,
+                      "content": "1. 위치.\n번화가 조금 옆에 있어서 조용하고\n창문 넘어 경치가 아주 좋습니다.\n\n\n2. 주변.\n주변에 시설은 많이 없어요\n편의점식당 차타고조금나가야합니다.\n출장일이 많아 이곳저곳 자는일이 많은데.\n주변이조용하고 한적하니 운치있네요.\n\n3. 주차.\n주차자리도 엄청 많고 주차장도 매우넓어요.편리하게 주차가능합니다\n\n\n4.친절도.\n프론트 직원분도 엄청 친절하세요.\n상냥하시고 친절하게 설명도 해주시고 감사했습니다.\n\n5. 청결.\n룸 컨디션 매우 좋습니다.\n이불이나, 침대도 깨끗하고\n욕실이며 이것저것 정리정돈도 잘되어 있어요.\n화장실은 역시 비대로 되어있어 만족\n\n6. 시설.\n1층에 카페있고.\n아침일찍 출근이라 조식은이용을못했네요\n웨딩홀도있었어요. 로비조명이며 분위기도최고\n방도넓고 이불이 가벼워서 아주 좋았어요.\n\n7.가성비\n가성비또한아주좋습니다\n가격에비해 시설이며컨디션마음에드네요.\n다음에오면 또이용할겁니다.",
+                      "contentLanguage": "kor",
+                      "likeCount": 0,
+                      "isLiked": false,
+                      "isBestReview": false,
+                      "isRealReview": false,
+                      "isImageReview": true,
+                      "isEditable": false,
+                      "isUserMasked": false,
+                      "isHidden": false,
+                      "status": "ACTIVE",
+                      "images": [
+                        {
+                          "id": 4584991,
+                          "url": "https://image.withstatic.com/126/282/10/e3b4cfb2d81346d2afa758fd20826fa5.jpg"
+                        },
+                        {
+                          "id": 4584992,
+                          "url": "https://image.withstatic.com/305/198/212/bdebff0ebe04458ba891806632305cc2.jpg"
+                        },
+                        {
+                          "id": 4584993,
+                          "url": "https://image.withstatic.com/392/269/141/268fd2544d27485e90b3c5729b85bd02.jpg"
+                        }
+                      ],
+                      "addition": {
+                        "travelerType": null,
+                        "spaceGroupName": "스탠다드 패밀리 트윈룸"
+                      },
+                      "comments": [
+                        {
+                          "createdAt": "2024-11-28T09:36:30+0900",
+                          "updatedAt": "2024-11-28T09:36:30+0900",
+                          "id": 3795813,
+                          "userType": "PARTNER",
+                          "userNickName": "제휴점 답변",
+                          "content": "집은갑갑해님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n고객님의 깊은 관심으로 고견을 공유해 주시고 호텔의 발전을 위해 도움을 주신 점 감사합니다.\n다음 투숙도 만족하실 수 있는 서비스를 제공해드리기 위해 최선을 다하겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+                        }
+                      ],
+                      "writtenBy": {
+                        "id": 6876488,
+                        "nickName": "집은갑갑해",
+                        "isUsingProfileImage": false,
+                        "profileImage": "https://image.otaY.kr/profile/ico/ico_21.png",
+                        "isTripHolic": false,
+                        "tripHolicTerm": 0,
+                        "reviewCount": 26,
+                        "reviewImageCount": 56,
+                        "reviewProductCount": 23,
+                        "isWithdrawn": false
+                      }
+                    },
+                    {
+                      "createdAt": "2025-04-06T20:17:49+0900",
+                      "updatedAt": "2025-04-06T20:17:49+0900",
+                      "reviewId": 25048140,
+                      "supplierKey": "GC",
+                      "title": null,
+                      "rating": 10,
+                      "content": "서울에서 가족들이 와서 반려견 동반 가능한 숙소 찾아보다가 예약했는데 기대이상으로 너무 좋았습니다. 방도 크도 화장실도 넓고 편하게 잘 잤어요 객실도 깨끗하고 침대도 푹신해서 모두 만족했습니다 비가와서 밖에 나가진 못했지만 아침에 반려견 놀이터도 잠깐 나갔다와봤어요 체크인 할 때 강아지 선물도 주셨어요 간식이랑 샴푸도 받고 직원분들 너무 친절하셔서 기분 좋았습니다 원주에 애견동반 숙소가 많지 않은데 다음번에 가족들이 오게되면 또 이용할 생각입니다 잘 쉬고 갑니다!!",
+                      "contentLanguage": "kor",
+                      "likeCount": 0,
+                      "isLiked": false,
+                      "isBestReview": false,
+                      "isRealReview": false,
+                      "isImageReview": true,
+                      "isEditable": false,
+                      "isUserMasked": false,
+                      "isHidden": false,
+                      "status": "ACTIVE",
+                      "images": [
+                        {
+                          "id": 5536530,
+                          "url": "https://image.withstatic.com/303/324/448/28207a0ce4494420a16e62ec6524acda.jpg"
+                        },
+                        {
+                          "id": 5536531,
+                          "url": "https://image.withstatic.com/88/252/368/def4d6949a984e10b51258d4b7a49c88.jpg"
+                        },
+                        {
+                          "id": 5536532,
+                          "url": "https://image.withstatic.com/122/373/316/454c7ad618e94d9e98beb18dbc3d6f64.jpg"
+                        }
+                      ],
+                      "addition": {
+                        "travelerType": null,
+                        "spaceGroupName": "펫 스위트"
+                      },
+                      "comments": [
+                        {
+                          "createdAt": "2025-04-10T13:13:34+0900",
+                          "updatedAt": "2025-04-10T13:13:34+0900",
+                          "id": 4075217,
+                          "userType": "PARTNER",
+                          "userNickName": "제휴점 답변",
+                          "content": "KHANNNNNN님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n고객님의 따뜻한 리뷰는 호텔 전직원이 공유하여 더 나은 서비스를 제공해드리기 위한 동기로 삼겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+                        }
+                      ],
+                      "writtenBy": {
+                        "id": 13978400,
+                        "nickName": "KHANNNNNN",
+                        "isUsingProfileImage": false,
+                        "profileImage": "https://image.otaY.kr/profile/ico/ico_21.png",
+                        "isTripHolic": false,
+                        "tripHolicTerm": 0,
+                        "reviewCount": 12,
+                        "reviewImageCount": 25,
+                        "reviewProductCount": 12,
+                        "isWithdrawn": false
+                      }
+                    },
+                    {
+                      "createdAt": "2025-07-29T23:31:46+0900",
+                      "updatedAt": "2025-08-02T20:14:39+0900",
+                      "reviewId": 27174099,
+                      "supplierKey": "GC",
+                      "title": null,
+                      "rating": 8,
+                      "content": "원주 시내 근처여서 어디 이동하기 불편함이 크게 없었어요 숙소도 대체로 깔끔해서 괜찮았어요 원주를 다시 간다면 이용할 의향이 있어요",
+                      "contentLanguage": "kor",
+                      "likeCount": 1,
+                      "isLiked": false,
+                      "isBestReview": false,
+                      "isRealReview": false,
+                      "isImageReview": false,
+                      "isEditable": false,
+                      "isUserMasked": true,
+                      "isHidden": false,
+                      "status": "ACTIVE",
+                      "images": [],
+                      "addition": {
+                        "travelerType": null,
+                        "spaceGroupName": "[조식 2인 패키지] 디럭스 더블룸"
+                      },
+                      "comments": [
+                        {
+                          "createdAt": "2025-07-30T14:14:47+0900",
+                          "updatedAt": "2025-07-30T14:14:47+0900",
+                          "id": 4294872,
+                          "userType": "PARTNER",
+                          "userNickName": "제휴점 답변",
+                          "content": "부천흑발님, 안녕하십니까?\n호텔 인터불고 원주를 이용해 주셔서 감사합니다.\n만족스러운 투숙을 하셨다니 저희 또한 매우 기쁩니다.\n앞으로도 고객님께서 더욱 편안히 투숙하실 수 있도록 노력하는 호텔이 되겠습니다.\n귀한 의견 주셔서 감사드리며 다시 모실 수 있는 기회가 있기를 기대하고 있겠습니다. 감사합니다."
+                        }
+                      ],
+                      "writtenBy": {
+                        "id": 5178069,
+                        "nickName": "부*****",
+                        "isUsingProfileImage": false,
+                        "profileImage": "https://image.withstatic.com/185/473/434/8a8a4bfa5a3b4a6e957b62af9e7bedfe.png",
+                        "isTripHolic": false,
+                        "tripHolicTerm": 0,
+                        "reviewCount": 0,
+                        "reviewImageCount": 0,
+                        "reviewProductCount": 0,
+                        "isWithdrawn": false
+                      }
+                    }
+                  ],
+                  "hasNext": true
+                },
+                "msg": null,
+                "servertime": 1755064823
+              },
+              "dataUpdateCount": 1,
+              "dataUpdatedAt": 1755064823728,
+              "error": null,
+              "errorUpdateCount": 0,
+              "errorUpdatedAt": 0,
+              "fetchFailureCount": 0,
+              "fetchMeta": null,
+              "isFetching": false,
+              "isInvalidated": false,
+              "isPaused": false,
+              "status": "success"
+            },
+            "queryKey": [
+              "review-list",
+              "domestic",
+              6849,
+              {
+                "sort": "highRankingScoreFirst",
+                "page": 0,
+                "size": 5
+              }
+            ],
+            "queryHash": "[\"review-list\",\"domestic\",6849,{\"page\":0,\"size\":5,\"sort\":\"highRankingScoreFirst\"}]"
+          }
+        ]
+      },
+      "robots": "index, follow",
+      "auth": {
+        "status": "NO_TOKEN"
+      }
+    },
+    "__N_SSP": true
+  },
+  "page": "/domestic-accommodations/[accommodationId]",
+  "query": {
+    "checkIn": "2025-08-16",
+    "checkOut": "2025-08-17",
+    "personal": "2",
+    "accommodationId": "6849"
+  },
+  "buildId": "UhjE9AX3zlU1zRL1sTuPy",
+  "assetPrefix": "https://static.otaY.com",
+  "isFallback": false,
+  "gssp": true,
+  "scriptLoader": []
+}
