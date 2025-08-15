@@ -11,8 +11,30 @@ const dist_1 = require("../../../packages/shared/dist");
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
-const DATA_ROOT = path_1.default.resolve('/workspace/data/Propery_Hub_JSON');
+function resolveDataRoot() {
+    const candidates = [
+        process.env.DATA_ROOT,
+        path_1.default.resolve(process.cwd(), 'data/Propery_Hub_JSON'),
+        path_1.default.resolve(__dirname, '../../../data/Propery_Hub_JSON'),
+        path_1.default.resolve('/workspace/data/Propery_Hub_JSON'),
+    ].filter(Boolean);
+    for (const p of candidates) {
+        try {
+            if (fs_1.default.existsSync(p) && fs_1.default.statSync(p).isDirectory())
+                return p;
+        }
+        catch (_e) {
+            // ignore
+        }
+    }
+    // fallback to first candidate even if not existing; routes will handle gracefully
+    return candidates[0] ?? path_1.default.resolve(process.cwd(), 'data/Propery_Hub_JSON');
+}
+const DATA_ROOT = resolveDataRoot();
 function listPropertyDatasets() {
+    if (!fs_1.default.existsSync(DATA_ROOT)) {
+        return [];
+    }
     const result = [];
     const propertyDirs = fs_1.default
         .readdirSync(DATA_ROOT)
@@ -120,4 +142,5 @@ app.get('/api/properties/:id', (req, res) => {
 const port = process.env.PORT ? Number(process.env.PORT) : 3001;
 app.listen(port, () => {
     console.log(`API listening on http://localhost:${port}`);
+    console.log(`Data root: ${DATA_ROOT}`);
 });
