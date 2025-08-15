@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Property Hub</title>
+	<style>
+		body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background:#fafafa; }
+		header { background: #111827; color: white; padding: 16px 24px; }
+		.container { padding: 16px 24px; max-width: 1200px; margin: 0 auto; }
+		.card { background: white; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); margin-bottom: 16px; }
+		.grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+		@media (min-width: 900px) { .grid-3 { grid-template-columns: 1fr 1fr 1fr; } }
+		.badge { display: inline-block; padding: 4px 8px; background: #EEF2FF; color: #3730A3; border-radius: 6px; font-size: 12px; margin-right: 6px; margin-bottom: 6px; }
+		.score { font-weight: 700; }
+		.small { color: #6b7280; font-size: 12px; }
+		img.thumb { height: 80px; border-radius: 6px; margin-right: 6px; }
+		.flex { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+		.tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+		.tab { padding: 8px 12px; border-radius: 6px; background: #E5E7EB; cursor: pointer; }
+		.tab.active { background: #111827; color: white; }
+		pre { overflow: auto; background: #0b1020; color:#d6e0ff; padding: 12px; border-radius: 6px; }
+		input, select, button { padding: 8px 10px; border: 1px solid #D1D5DB; border-radius: 6px; }
+		button { background: #111827; color: white; cursor: pointer; }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h2>Property Hub</h2>
+			<div class="small">Consolidated property profile and OTA comparison</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="card">
+			<div class="flex">
+				<label for="prop">Property (Yanolja ID):</label>
+				<select id="prop"></select>
+				<button id="loadBtn">Load</button>
+			</div>
+		</div>
+		<div id="content" class="grid"></div>
+	</div>
+	<script>
+	const API_BASE = (location.origin.startsWith('file:') ? 'http://localhost:8000' : location.origin.replace(/:\\d+$/, ":8000"));
+
+	async function fetchJSON(url){
+		const res = await fetch(url);
+		if(!res.ok) throw new Error(await res.text());
+		return res.json();
+	}
+
+	async function loadProps(){
+		const data = await fetchJSON(`${API_BASE}/properties`);
+		const sel = document.getElementById('prop');
+		sel.innerHTML = '';
+		for(const id of data.properties){
+			const opt = document.createElement('option');
+			opt.value = id; opt.textContent = id;
+			sel.appendChild(opt);
+		}
+	}
+
+	function pct(v){ return `${v.toFixed ? v.toFixed(2) : v}%`; }
+
+	function render(data){
+		const content = document.getElementById('content');
+		content.innerHTML = '';
+		const c = data.canonical;
+
+		const images = (c.images||[]).slice(0,6).map(i=>`<img class="thumb" src="${i.url}" alt="" onerror="this.style.display='none'"/>`).join('');
+		const facs = (c.facilities||[]).slice(0,20).map(f=>`<span class="badge">${f}</span>`).join('');
+
+		const compA = data.comparison.yanolja_vs_otaA;
+		const compY = data.comparison.yanolja_vs_otaY;
+
+		const left = document.createElement('div');
+		left.className = 'card';
+		left.innerHTML = `
+			<h3>${c.name||''}</h3>
+			<div class="small">${c.address?.full||''}</div>
+			<div class="flex" style="margin-top:8px">${images}</div>
+			<p>${c.description||''}</p>
+			<div>${facs}</div>
+		`;
+		content.appendChild(left);
+
+		const right = document.createElement('div');
+		right.className = 'card';
+		right.innerHTML = `
+			<h4>Match Scores</h4>
+			<div class="grid grid-3">
+				<div>
+					<div class="small">vs otaA</div>
+					<div>Name: <span class="score">${pct(compA.name)}</span></div>
+					<div>Address: <span class="score">${pct(compA.address)}</span></div>
+					<div>Facilities: <span class="score">${pct(compA.facilities)}</span></div>
+					<div>Images: <span class="score">${pct(compA.images)}</span></div>
+					<div>Overall: <span class="score">${pct(compA.overall)}</span></div>
+				</div>
+				<div>
+					<div class="small">vs otaY</div>
+					<div>Name: <span class="score">${pct(compY.name)}</span></div>
+					<div>Address: <span class="score">${pct(compY.address)}</span></div>
+					<div>Facilities: <span class="score">${pct(compY.facilities)}</span></div>
+					<div>Images: <span class="score">${pct(compY.images)}</span></div>
+					<div>Overall: <span class="score">${pct(compY.overall)}</span></div>
+				</div>
+			</div>
+
+			<div class="tabs">
+				<div class="tab active" data-tab="yanolja">Yanolja (canonical)</div>
+				<div class="tab" data-tab="otaA">otaA (raw)</div>
+				<div class="tab" data-tab="otaY">otaY (raw)</div>
+			</div>
+			<div id="tab-yanolja"><pre>${JSON.stringify(data.sources.yanolja, null, 2)}</pre></div>
+			<div id="tab-otaA" style="display:none"><pre>${JSON.stringify(data.sources.otaA, null, 2)}</pre></div>
+			<div id="tab-otaY" style="display:none"><pre>${JSON.stringify(data.sources.otaY, null, 2)}</pre></div>
+		`;
+		content.appendChild(right);
+
+		for(const el of right.querySelectorAll('.tab')){
+			el.addEventListener('click', ()=>{
+				right.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+				el.classList.add('active');
+				right.querySelectorAll('[id^=tab-]').forEach(p=>p.style.display='none');
+				right.querySelector('#tab-'+el.dataset.tab).style.display = '';
+			});
+		}
+	}
+
+	document.getElementById('loadBtn').addEventListener('click', async ()=>{
+		const id = document.getElementById('prop').value;
+		const data = await fetchJSON(`${API_BASE}/properties/${id}`);
+		render(data);
+	});
+
+	loadProps();
+	</script>
+</body>
+</html>
