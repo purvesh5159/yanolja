@@ -20,7 +20,25 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const DATA_ROOT = '../../data/Propery_Hub_JSON';
+function resolveDataRoot(): string {
+	const candidates = [
+		process.env.DATA_ROOT,
+		path.resolve(process.cwd(), 'data/Propery_Hub_JSON'),
+		path.resolve(__dirname, '../../../data/Propery_Hub_JSON'),
+		path.resolve('/workspace/data/Propery_Hub_JSON'),
+	].filter(Boolean) as string[];
+	for (const p of candidates) {
+		try {
+			if (fs.existsSync(p) && fs.statSync(p).isDirectory()) return p;
+		} catch (_e) {
+			// ignore
+		}
+	}
+	// fallback to first candidate even if not existing; routes will handle gracefully
+	return candidates[0] ?? path.resolve(process.cwd(), 'data/Propery_Hub_JSON');
+}
+
+const DATA_ROOT = resolveDataRoot();
 
 interface PropertyDatasetPaths {
 	id: string;
@@ -31,6 +49,9 @@ interface PropertyDatasetPaths {
 }
 
 function listPropertyDatasets(): PropertyDatasetPaths[] {
+	if (!fs.existsSync(DATA_ROOT)) {
+		return [];
+	}
 	const result: PropertyDatasetPaths[] = [];
 	const propertyDirs = fs
 		.readdirSync(DATA_ROOT)
@@ -141,4 +162,5 @@ app.get('/api/properties/:id', (req, res) => {
 const port = process.env.PORT ? Number(process.env.PORT) : 3001;
 app.listen(port, () => {
 	console.log(`API listening on http://localhost:${port}`);
+	console.log(`Data root: ${DATA_ROOT}`);
 });
