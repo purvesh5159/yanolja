@@ -1,0 +1,119 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  ADMIN
+  RESIDENT
+  SECURITY
+}
+
+enum BillStatus {
+  PENDING
+  PAID
+  OVERDUE
+}
+
+enum ComplaintStatus {
+  OPEN
+  IN_PROGRESS
+  CLOSED
+}
+
+model User {
+  id            String    @id @default(uuid())
+  name          String
+  email         String    @unique
+  passwordHash  String
+  role          UserRole  @default(RESIDENT)
+  flat          Flat?     @relation(fields: [flatId], references: [id])
+  flatId        String?
+
+  complaints    Complaint[]
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Tower {
+  id        String  @id @default(uuid())
+  name      String  @unique
+  flats     Flat[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Flat {
+  id               String            @id @default(uuid())
+  number           String
+  floor            Int
+  tower            Tower             @relation(fields: [towerId], references: [id])
+  towerId          String
+
+  residents        User[]
+  maintenanceBills MaintenanceBill[]
+  complaints       Complaint[]
+
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+
+  @@unique([towerId, number])
+}
+
+model MaintenanceBill {
+  id         String     @id @default(uuid())
+  flat       Flat       @relation(fields: [flatId], references: [id])
+  flatId     String
+  monthStart DateTime   // use first day of month
+  amountCents Int
+  dueDate    DateTime
+  status     BillStatus @default(PENDING)
+
+  payments   Payment[]
+
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+
+  @@unique([flatId, monthStart])
+}
+
+model Payment {
+  id           String          @id @default(uuid())
+  bill         MaintenanceBill @relation(fields: [billId], references: [id])
+  billId       String
+  amountCents  Int
+  provider     String?
+  providerRef  String?
+  status       String
+  paidAt       DateTime?
+
+  createdAt    DateTime        @default(now())
+}
+
+model Complaint {
+  id          String           @id @default(uuid())
+  flat        Flat             @relation(fields: [flatId], references: [id])
+  flatId      String
+  raisedBy    User             @relation(fields: [raisedByUserId], references: [id])
+  raisedByUserId String
+
+  category    String
+  description String
+  status      ComplaintStatus  @default(OPEN)
+
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+}

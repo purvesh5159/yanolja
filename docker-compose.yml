@@ -1,0 +1,38 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: society_db
+    environment:
+      POSTGRES_USER: society
+      POSTGRES_PASSWORD: society_pass
+      POSTGRES_DB: society_mgmt
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U society -d society_mgmt"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  backend:
+    build:
+      context: ./backend
+    container_name: society_backend
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://society:society_pass@db:5432/society_mgmt?schema=public
+      - JWT_SECRET=dev_secret_change
+      - PORT=4000
+    ports:
+      - "4000:4000"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: npm run dev
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+volumes:
+  db_data:
